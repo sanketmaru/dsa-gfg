@@ -1,0 +1,35 @@
+{
+  "name": "dsa-gfg",
+  "version": "0.0.1",
+  "description": "Data Structure and Algorithms based on Geeks for Geeks DSA online Course",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanketmaru/dsa-gfg.git"
+  },
+  "keywords": [
+    "algorithms",
+    "typescript",
+    "stack",
+    "queues",
+    "linkedlist",
+    "trees",
+    "heap",
+    "arrays",
+    "node"
+  ],
+  "author": "Sanket Maru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanketmaru/dsa-gfg/issues"
+  },
+  "homepage": "https://github.com/sanketmaru/dsa-gfg#readme",
+  "devDependencies": {
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  }
+}
