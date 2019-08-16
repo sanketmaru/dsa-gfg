@@ -1,7 +1,7 @@
 // Implement a Stack using Array. Your task is to complete the functions below.
 // You are required to complete two methods push which take one argument an integer 'x' to be pushed into the stack
 // and pop which returns a integer poped out from the stack.
-export class Stack {
+class Stack {
     public top: number;
     public arr: number[] = [];
     constructor() {

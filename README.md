@@ -4,7 +4,7 @@ This repository is a demonstration of my work where i have solved atleast 1-2 pr
 
 All the solutions are in typescript which you can transpile to es2015 version also.
 
-#Install
+# Install
 1. npm install
 2. npm run build 
 

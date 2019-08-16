@@ -10,14 +10,15 @@ class StackNode {
 
 // tslint:disable-next-line: max-classes-per-file
 class MyStack {
-    public top: StackNode | null;
+    public top: StackNode | null = null;
     public push(a: number) {
         // Add your code here
         if (this.top == null) {
-            this.top = new StackNode(a);
+            const temp = new StackNode(a);
+            this.top = temp;
         } else {
             const temp = new StackNode(a);
-            temp.next = top;
+            temp.next = this.top;
             this.top = temp;
         }
     }
@@ -26,7 +27,7 @@ class MyStack {
             return -1;
         }
         const temp = this.top.next;
-        const popped: StackNode = top;
+        const popped: StackNode = this.top;
         this.top = temp;
         return popped.data;
     }
