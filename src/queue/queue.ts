@@ -1,5 +1,5 @@
 // Implement a Queue using Array. Your task is only to complete the functions push and pop.
-class Queue {
+export class Queue {
     public front: number = 0;
     public rear: number = 0;
     public arr: number[] = [];
