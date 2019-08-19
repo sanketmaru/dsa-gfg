@@ -11,11 +11,11 @@ class LinkedListNode {
 }
 
 // tslint:disable-next-line: max-classes-per-file
-class LinkedList {
+export class LinkedList {
     public head: LinkedListNode | null = null;
     public tail: LinkedListNode | null = null;
     // insert at beginning
-    public insert(a: number) {
+    public add(a: number) {
         const temp = new LinkedListNode(a);
         if (this.head == null) {
             this.head = temp;
@@ -36,6 +36,15 @@ class LinkedList {
             this.tail.next = temp;
         }
         this.tail = temp;
+    }
+    public values() {
+        const val = [];
+        let temp = this.head;
+        while (temp != null) {
+            val.push(temp.data);
+            temp = temp.next;
+        }
+        return val;
     }
     // get count of nodes in a linked list
     public count(): number {
