@@ -1,0 +1,1871 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/index.ts",
+    "content": "import { Queue } from \"./queue/queue\";\nimport { Stack } from \"./stack/stack\";\n\n// tslint:disable-next-line: no-console\nconsole.log(\"Creating stacks\");\n\nconst stack = new Stack();\nstack.push(1);\nstack.push(2);\n\n// tslint:disable-next-line: no-console\nconsole.log(\"stack items\", stack);\n\n// tslint:disable-next-line: no-console\nconsole.log(\"Creating Queue\");\nconst queue = new Queue();\nqueue.push(2);\nqueue.push(3);\n\n// tslint:disable-next-line: no-console\nconsole.log(\"queue items\", queue);\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/index.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "stack",
+    "memberof": "src/index.ts",
+    "static": true,
+    "longname": "src/index.ts~stack",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/index.ts",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/stack/stack.ts~Stack"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "queue",
+    "memberof": "src/index.ts",
+    "static": true,
+    "longname": "src/index.ts~queue",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/index.ts",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/queue/queue.ts~Queue"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "file",
+    "name": "src/linkedlist/count-nodes.ts",
+    "content": "\nclass CountNodes {\n    // public getCount(Node head){\n\n    //     //Code here\n    // }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/linkedlist/count-nodes.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 52,
+    "kind": "class",
+    "name": "CountNodes",
+    "memberof": "src/linkedlist/count-nodes.ts",
+    "static": true,
+    "longname": "src/linkedlist/count-nodes.ts~CountNodes",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/linkedlist/count-nodes.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 2,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/linkedlist/linked-list.ts",
+    "content": "// Insertion in a linked list\n\nclass LinkedListNode {\n    public data: number;\n    public next: LinkedListNode | null;\n\n    constructor(a: number) {\n        this.data = a;\n        this.next = null;\n    }\n}\n\n// tslint:disable-next-line: max-classes-per-file\nclass LinkedList {\n    public head: LinkedListNode | null = null;\n    public tail: LinkedListNode | null = null;\n    // insert at beginning\n    public insert(a: number) {\n        const temp = new LinkedListNode(a);\n        if (this.head == null) {\n            this.head = temp;\n            return;\n        }\n        temp.next = this.head;\n        this.head = temp;\n    }\n    // insert at end\n    public insertAtEnd(a: number) {\n        const temp = new LinkedListNode(a);\n        if (this.head == null ) {\n            this.head = temp;\n            this.tail = this.head;\n            return;\n        }\n        if (this.tail) {\n            this.tail.next = temp;\n        }\n        this.tail = temp;\n    }\n    // get count of nodes in a linked list\n    public count(): number {\n        let count = 0;\n        if (this.head === null) {\n            return count;\n        }\n        count = 1;\n        let temp: LinkedListNode = this.head;\n        while (temp.next != null) {\n            ++count;\n            temp = temp.next;\n        }\n        return count;\n    }\n    public getNth() {\n        \n    }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/linkedlist/linked-list.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "class",
+    "name": "LinkedListNode",
+    "memberof": "src/linkedlist/linked-list.ts",
+    "static": true,
+    "longname": "src/linkedlist/linked-list.ts~LinkedListNode",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/linkedlist/linked-list.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 3,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedListNode",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedListNode#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "member",
+    "name": "data",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedListNode",
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedListNode#data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "member",
+    "name": "next",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedListNode",
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedListNode#next",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "class",
+    "name": "LinkedList",
+    "memberof": "src/linkedlist/linked-list.ts",
+    "static": true,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/linkedlist/linked-list.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 14,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedList",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "name": "head",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedList",
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList#head",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "tail",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedList",
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList#tail",
+    "access": "public",
+    "description": "",
+    "lineNumber": 16,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "insert",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedList",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList#insert",
+    "access": "public",
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "insertAtEnd",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedList",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList#insertAtEnd",
+    "access": "public",
+    "description": "",
+    "lineNumber": 28,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "count",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedList",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList#count",
+    "access": "public",
+    "description": "",
+    "lineNumber": 41,
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "getNth",
+    "memberof": "src/linkedlist/linked-list.ts~LinkedList",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/linkedlist/linked-list.ts~LinkedList#getNth",
+    "access": "public",
+    "description": "",
+    "lineNumber": 54,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/queue/lru-cache.ts",
+    "content": "// The task is to design and implement methods of an LRU cache.\n// The class has two methods get() and set() which are defined as follows.\n// get(x)   : Returns the value of the key x if the key exists in the cache otherwise returns -1.\n// set(x,y) : inserts the value if the key x is not already present.\n// If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.\n// In the constructor of the class the size of the cache should be intitialized.",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/lru-cache.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "file",
+    "name": "src/queue/maximum-subarrays.ts",
+    "content": "",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/maximum-subarrays.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 73,
+    "kind": "file",
+    "name": "src/queue/queue-node.ts",
+    "content": "/*This is a function problem.You only need to complete the function given below*/\n/*The structure of the node of the queue is*/\n\nclass QueueNode {\n    public data: number;\n    public next: QueueNode | null;\n    constructor(a: number) {\n        this.data = a;\n        this.next = null;\n    }\n}\n// tslint:disable-next-line: max-classes-per-file\nclass MyQueue {\n    public front: QueueNode | null = null;\n    public rear: QueueNode | null = null;\n\n    // This function should add an item at\n    // rear\n    public push(a: number) {\n        // Your code here\n        const temp = new QueueNode(a);\n        if (this.front == null) {\n            this.front = temp;\n            this.rear = this.front;\n        } else {\n            if (this.rear) {\n                this.rear.next = temp;\n            }\n            this.rear = temp;\n        }\n    }\n\n    // This function should remove front\n    // item from queue and should return\n    // the removed item.\n    public pop() {\n        if (this.front == null) {\n            return -1;\n        }\n        // Your code here\n        if (this.rear === this.front) {\n            const data = this.front.data;\n            this.front = this.rear = null;\n            return data;\n        }\n        const temp = this.front;\n        this.front = temp.next;\n        return temp.data;\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/queue-node.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 74,
+    "kind": "class",
+    "name": "QueueNode",
+    "memberof": "src/queue/queue-node.ts",
+    "static": true,
+    "longname": "src/queue/queue-node.ts~QueueNode",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/queue/queue-node.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 4,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/queue/queue-node.ts~QueueNode",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/queue-node.ts~QueueNode#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "member",
+    "name": "data",
+    "memberof": "src/queue/queue-node.ts~QueueNode",
+    "static": false,
+    "longname": "src/queue/queue-node.ts~QueueNode#data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "member",
+    "name": "next",
+    "memberof": "src/queue/queue-node.ts~QueueNode",
+    "static": false,
+    "longname": "src/queue/queue-node.ts~QueueNode#next",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "class",
+    "name": "MyQueue",
+    "memberof": "src/queue/queue-node.ts",
+    "static": true,
+    "longname": "src/queue/queue-node.ts~MyQueue",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/queue/queue-node.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 13,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/queue/queue-node.ts~MyQueue",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/queue-node.ts~MyQueue#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "member",
+    "name": "front",
+    "memberof": "src/queue/queue-node.ts~MyQueue",
+    "static": false,
+    "longname": "src/queue/queue-node.ts~MyQueue#front",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "member",
+    "name": "rear",
+    "memberof": "src/queue/queue-node.ts~MyQueue",
+    "static": false,
+    "longname": "src/queue/queue-node.ts~MyQueue#rear",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "push",
+    "memberof": "src/queue/queue-node.ts~MyQueue",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/queue-node.ts~MyQueue#push",
+    "access": "public",
+    "description": "",
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 86,
+    "kind": "method",
+    "name": "pop",
+    "memberof": "src/queue/queue-node.ts~MyQueue",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/queue-node.ts~MyQueue#pop",
+    "access": "public",
+    "description": "",
+    "lineNumber": 36,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/queue/queue.ts",
+    "content": "// Implement a Queue using Array. Your task is only to complete the functions push and pop.\nexport class Queue {\n    public front: number = 0;\n    public rear: number = 0;\n    public arr: number[] = [];\n\n    constructor() {\n        this.front = 0;\n        this.rear = 0;\n    }\n\n    /* The method push to push element\n\t   into the queue */\n    public push(a: number) {\n        this.arr[this.front++] = a;\n    }\n    /* The method pop which return the \n       element poped out of the queue*/\n    public pop() {\n        // Your code\n        if (this.front === this.rear) {\n            return -1;\n        }\n        return this.arr[this.rear++];\n// \t    if(arr.length <= 0) {\n// \t        return -1;\n// \t    }\n// \t\tint element = arr[front];\n// \t\t++front;\n// \t\tint tempArr[] = new int[arr.length];\n// \t\tfor(int i=front,j=0;i<=arr.length - 1;i++,j++) {\n// \t\t    tempArr[j] = arr[i];\n// \t\t}\n// \t\tarr = tempArr;\n// \t\trear = arr.length - 1;\n// \t\treturn element;\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/queue.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "class",
+    "name": "Queue",
+    "memberof": "src/queue/queue.ts",
+    "static": true,
+    "longname": "src/queue/queue.ts~Queue",
+    "access": "public",
+    "export": true,
+    "importPath": "dsa-gfg/src/queue/queue.ts",
+    "importStyle": "{Queue}",
+    "description": "",
+    "lineNumber": 2,
+    "interface": false
+  },
+  {
+    "__docId__": 91,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/queue/queue.ts~Queue",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/queue.ts~Queue#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "member",
+    "name": "front",
+    "memberof": "src/queue/queue.ts~Queue",
+    "static": false,
+    "longname": "src/queue/queue.ts~Queue#front",
+    "access": "public",
+    "description": "",
+    "lineNumber": 3,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "member",
+    "name": "rear",
+    "memberof": "src/queue/queue.ts~Queue",
+    "static": false,
+    "longname": "src/queue/queue.ts~Queue#rear",
+    "access": "public",
+    "description": "",
+    "lineNumber": 4,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "member",
+    "name": "arr",
+    "memberof": "src/queue/queue.ts~Queue",
+    "static": false,
+    "longname": "src/queue/queue.ts~Queue#arr",
+    "access": "public",
+    "description": "",
+    "lineNumber": 5,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "push",
+    "memberof": "src/queue/queue.ts~Queue",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/queue.ts~Queue#push",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "pop",
+    "memberof": "src/queue/queue.ts~Queue",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/queue.ts~Queue#pop",
+    "access": "public",
+    "description": "",
+    "lineNumber": 19,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/queue/reverse-k-elements.ts",
+    "content": "",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/reverse-k-elements.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "file",
+    "name": "src/stack/remove-consecutive-duplicates.ts",
+    "content": "// Stacks can be used to remove duplicate characters from a string that are stacked next to each other.\n// For example, we take the string aabbccccc and convert it into abc.\n// We can push the first character into a stack and skip if the top of the stack is equal to current character.\n\n// Input:\n// 2\n// aaaaaabaabccccccc\n// abbccbcd\n\n// Output:\n// ababc\n// abcbcd\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/stack/remove-consecutive-duplicates.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/stack/stack-node.ts",
+    "content": "// Implement a Stack using Linked List .\nclass StackNode {\n    public data: number;\n    public next: StackNode | null;\n    constructor(a: number) {\n        this.data = a;\n        this.next = null;\n    }\n}\n\n// tslint:disable-next-line: max-classes-per-file\nclass MyStack {\n    public top: StackNode | null = null;\n    public push(a: number) {\n        // Add your code here\n        if (this.top == null) {\n            const temp = new StackNode(a);\n            this.top = temp;\n        } else {\n            const temp = new StackNode(a);\n            temp.next = this.top;\n            this.top = temp;\n        }\n    }\n    public pop() {\n        if ( this.top == null) {\n            return -1;\n        }\n        const temp = this.top.next;\n        const popped: StackNode = this.top;\n        this.top = temp;\n        return popped.data;\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/stack/stack-node.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "class",
+    "name": "StackNode",
+    "memberof": "src/stack/stack-node.ts",
+    "static": true,
+    "longname": "src/stack/stack-node.ts~StackNode",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/stack/stack-node.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 2,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/stack/stack-node.ts~StackNode",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/stack-node.ts~StackNode#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true
+  },
+  {
+    "__docId__": 104,
+    "kind": "member",
+    "name": "data",
+    "memberof": "src/stack/stack-node.ts~StackNode",
+    "static": false,
+    "longname": "src/stack/stack-node.ts~StackNode#data",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "member",
+    "name": "next",
+    "memberof": "src/stack/stack-node.ts~StackNode",
+    "static": false,
+    "longname": "src/stack/stack-node.ts~StackNode#next",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 106,
+    "kind": "class",
+    "name": "MyStack",
+    "memberof": "src/stack/stack-node.ts",
+    "static": true,
+    "longname": "src/stack/stack-node.ts~MyStack",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/stack/stack-node.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 12,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/stack/stack-node.ts~MyStack",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/stack-node.ts~MyStack#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "member",
+    "name": "top",
+    "memberof": "src/stack/stack-node.ts~MyStack",
+    "static": false,
+    "longname": "src/stack/stack-node.ts~MyStack#top",
+    "access": "public",
+    "description": "",
+    "lineNumber": 13,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 109,
+    "kind": "method",
+    "name": "push",
+    "memberof": "src/stack/stack-node.ts~MyStack",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/stack-node.ts~MyStack#push",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "pop",
+    "memberof": "src/stack/stack-node.ts~MyStack",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/stack-node.ts~MyStack#pop",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/stack/stack.ts",
+    "content": "// Implement a Stack using Array. Your task is to complete the functions below.\n// You are required to complete two methods push which take one argument an integer 'x' to be pushed into the stack\n// and pop which returns a integer poped out from the stack.\n/**\n * this is Stack Class.\n */\nexport class Stack {\n    public top: number;\n    public arr: number[] = [];\n    constructor() {\n        this.top = -1;\n    }\n\n    /** The method push to push element into the stack\n     * @param {number} a - this is a value.\n     * @return {void}\n     */\n    public push(a: number) {\n        if (!a) {\n            // tslint:disable-next-line: no-console\n            console.debug(\"Please push a proper value\");\n            return;\n        }\n        this.top = this.top + 1;\n        this.arr[this.top] = a;\n    }\n\n    /* The method pop which return\n      the element poped out of the stack*/\n    public pop() {\n        // Your code here\n        if ( this.top === -1) {\n            return -1;\n        }\n        const topElement = this.arr[this.top];\n        this.arr = this.arr.filter( (elem, index) => {\n            return index !== this.top;\n        });\n        this.top = this.top - 1;\n        return topElement;\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/stack/stack.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "class",
+    "name": "Stack",
+    "memberof": "src/stack/stack.ts",
+    "static": true,
+    "longname": "src/stack/stack.ts~Stack",
+    "access": "public",
+    "export": true,
+    "importPath": "dsa-gfg/src/stack/stack.ts",
+    "importStyle": "{Stack}",
+    "description": "this is Stack Class.",
+    "lineNumber": 7,
+    "interface": false
+  },
+  {
+    "__docId__": 116,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/stack/stack.ts~Stack",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/stack.ts~Stack#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "member",
+    "name": "arr",
+    "memberof": "src/stack/stack.ts~Stack",
+    "static": false,
+    "longname": "src/stack/stack.ts~Stack#arr",
+    "access": "public",
+    "description": "",
+    "lineNumber": 9,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 118,
+    "kind": "member",
+    "name": "top",
+    "memberof": "src/stack/stack.ts~Stack",
+    "static": false,
+    "longname": "src/stack/stack.ts~Stack#top",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 119,
+    "kind": "method",
+    "name": "push",
+    "memberof": "src/stack/stack.ts~Stack",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/stack.ts~Stack#push",
+    "access": "public",
+    "description": "The method push to push element into the stack",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "a",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 121,
+    "kind": "method",
+    "name": "pop",
+    "memberof": "src/stack/stack.ts~Stack",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/stack.ts~Stack#pop",
+    "access": "public",
+    "description": "",
+    "lineNumber": 30,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 124,
+    "kind": "file",
+    "name": "src/stack/two-stacks.ts",
+    "content": "// Your task is to implement  2 stacks in one array efficiently .\nclass TwoStack {\n    public size: number;\n    public top1: number;\n    public top2: number;\n    public arr: number[] = [];\n    constructor() {\n        this.size = 100;\n        this.top1 = -1;\n        this.top2 = this.size;\n    }\n}\n\n// tslint:disable-next-line: max-classes-per-file\nexport class Stacks {\n    // sq is the object of class TwoStack\n    /* The method push to push element into the stack 2 */\n    public push1(x: number, sq: TwoStack) {\n        sq.top1 = sq.top1 + 1;\n        sq.arr[sq.top1] = x;\n    }\n    /* The method push to push element into the stack 2*/\n    public push2(x: number, sq: TwoStack) {\n        sq.top2 = sq.top2 - 1;\n        sq.arr[sq.top2] = x;\n    }\n    /* The method pop to pop element from the stack 1 */\n    // Return the popped element\n    public pop1(sq: TwoStack) {\n        if (sq.top1 === -1) {\n            return -1;\n        }\n        const topElement = sq.arr[sq.top1];\n        sq.top1--;\n        return topElement;\n    }\n    /* The method pop to pop element from the stack 2 */\n    // Return the popper element\n    public pop2(sq: TwoStack) {\n        if (sq.top2 === 100) {\n            return 100;\n        }\n        const topElement = sq.arr[sq.top2];\n        sq.top2++;\n        return topElement;\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/stack/two-stacks.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 125,
+    "kind": "class",
+    "name": "TwoStack",
+    "memberof": "src/stack/two-stacks.ts",
+    "static": true,
+    "longname": "src/stack/two-stacks.ts~TwoStack",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/stack/two-stacks.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 2,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/stack/two-stacks.ts~TwoStack",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~TwoStack#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "member",
+    "name": "arr",
+    "memberof": "src/stack/two-stacks.ts~TwoStack",
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~TwoStack#arr",
+    "access": "public",
+    "description": "",
+    "lineNumber": 6,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "member",
+    "name": "size",
+    "memberof": "src/stack/two-stacks.ts~TwoStack",
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~TwoStack#size",
+    "access": "public",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "member",
+    "name": "top1",
+    "memberof": "src/stack/two-stacks.ts~TwoStack",
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~TwoStack#top1",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 130,
+    "kind": "member",
+    "name": "top2",
+    "memberof": "src/stack/two-stacks.ts~TwoStack",
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~TwoStack#top2",
+    "access": "public",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 131,
+    "kind": "class",
+    "name": "Stacks",
+    "memberof": "src/stack/two-stacks.ts",
+    "static": true,
+    "longname": "src/stack/two-stacks.ts~Stacks",
+    "access": "public",
+    "export": true,
+    "importPath": "dsa-gfg/src/stack/two-stacks.ts",
+    "importStyle": "{Stacks}",
+    "description": "",
+    "lineNumber": 15,
+    "interface": false
+  },
+  {
+    "__docId__": 132,
+    "kind": "method",
+    "name": "push1",
+    "memberof": "src/stack/two-stacks.ts~Stacks",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~Stacks#push1",
+    "access": "public",
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "TwoStack"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sq",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 133,
+    "kind": "method",
+    "name": "push2",
+    "memberof": "src/stack/two-stacks.ts~Stacks",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~Stacks#push2",
+    "access": "public",
+    "description": "",
+    "lineNumber": 23,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "TwoStack"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sq",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 134,
+    "kind": "method",
+    "name": "pop1",
+    "memberof": "src/stack/two-stacks.ts~Stacks",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~Stacks#pop1",
+    "access": "public",
+    "description": "",
+    "lineNumber": 29,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TwoStack"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sq",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "method",
+    "name": "pop2",
+    "memberof": "src/stack/two-stacks.ts~Stacks",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/stack/two-stacks.ts~Stacks#pop2",
+    "access": "public",
+    "description": "",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TwoStack"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "sq",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 136,
+    "kind": "file",
+    "name": "src/star/star.ts",
+    "content": "class Star {\n    //      *\n    //     * *\n    //    * * *\n    // print above pattern given the level\n    public printStar(num: number) {\n        for (let i = 1; i <= num; i++) {\n            for (let k = 1; k <= (num - i); k++) {\n                document.write(\"&nbsp;\");\n            }\n            for (let j = 1; j <= i ; j++) {\n                document.write(\"*\");\n            }\n            document.write(\"<br/>\");\n        }\n    }\n    // 4 3 2 1\n    //  3 2 1\n    //   2 1\n    //    1\n    // printNumbers(4);\n    public printNumbers(num: number) {\n        for (let i = num; i >= 1; i--) {\n            for (let k = 1; k <= (num - i) ; k++) {\n                document.write(\"&nbsp;\");\n            }\n            for (let j = i; j >= 1 ; j--) {\n                document.write(j + \"\");\n            }\n            document.write(\"<br/>\");\n        }\n    }\n}\n\n// document.write('<br/>');\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/star/star.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 137,
+    "kind": "class",
+    "name": "Star",
+    "memberof": "src/star/star.ts",
+    "static": true,
+    "longname": "src/star/star.ts~Star",
+    "access": "public",
+    "export": false,
+    "importPath": "dsa-gfg/src/star/star.ts",
+    "importStyle": null,
+    "description": "",
+    "lineNumber": 1,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "method",
+    "name": "printStar",
+    "memberof": "src/star/star.ts~Star",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/star/star.ts~Star#printStar",
+    "access": "public",
+    "description": "",
+    "lineNumber": 6,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "num",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 139,
+    "kind": "method",
+    "name": "printNumbers",
+    "memberof": "src/star/star.ts~Star",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/star/star.ts~Star#printNumbers",
+    "access": "public",
+    "description": "",
+    "lineNumber": 22,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "num",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "kind": "index",
+    "content": "# Data Structures and Algorithms implemented in Typescript. \n \nThis repository is a demonstration of my work where i have solved atleast 1-2 problems a day. This repository will help anyone to challenge yourself and do a DS-A problem a day.\n\nAll the solutions are in typescript which you can transpile to es2015 version also.\n\n# Install\n1. npm install\n2. npm run build \n\n\n[Stacks](./src/stack)\n   * [Implement a Stack using Array](./src/stack/stack.ts \"(target|_blank)\")\n   * [Implement a Stack using Linked List](./src/stack/stack-node.ts)\n   * [Implement 2 stacks in one array](./src/stack/two-stacks.ts)\n   * [Remove consecutive Duplicates](./src/stack/remove-consecutive-duplicates.ts)\n\n[Queues](./src/queue)\n   * [Implement a Queue using Array](./src/queue/queue.ts)\n   * [Implement a Queue using Linked List](./src/queue/queue-node.ts)\n   * [Implement a LRU Cache](./src/queue/lru-cache.ts)\n   * [Maximum of all subarrays of size k](./src/queue/maximum-subarrays.ts)\n   * [Reverse First K elements of Queue](./src/queue/reverse-k-elements.ts)\n\n>The problems are taken from <a href=\"https://practice.geeksforgeeks.org/\" target=\"_blank\">GeeksForGeeks</a>. It contains solutions to most of the problems in C++/Java and would recommend as the go to site for learning data structures and algorithms. ",
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"dsa-gfg\",\n  \"version\": \"0.0.1\",\n  \"description\": \"Data Structure and Algorithms based on Geeks for Geeks DSA online Course\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"build\": \"webpack\",\n    \"test\": \"npm run test\",\n    \"docs\": \"esdoc\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/sanketmaru/dsa-gfg.git\"\n  },\n  \"keywords\": [\n    \"algorithms\",\n    \"typescript\",\n    \"stack\",\n    \"queues\",\n    \"linkedlist\",\n    \"trees\",\n    \"heap\",\n    \"arrays\",\n    \"node\"\n  ],\n  \"author\": \"Sanket Maru\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/sanketmaru/dsa-gfg/issues\"\n  },\n  \"homepage\": \"https://github.com/sanketmaru/dsa-gfg#readme\",\n  \"devDependencies\": {\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-coverage-plugin\": \"^1.1.0\",\n    \"esdoc-integrate-test-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"esdoc-typescript-plugin\": \"^1.0.1\",\n    \"html-webpack-plugin\": \"^3.2.0\",\n    \"ts-loader\": \"^6.0.4\",\n    \"tslint\": \"^5.18.0\",\n    \"typescript\": \"^3.5.2\",\n    \"webpack\": \"^4.39.2\",\n    \"webpack-cli\": \"^3.3.6\"\n  }\n}\n",
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

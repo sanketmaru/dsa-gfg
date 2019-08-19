@@ -1,0 +1,354 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 505,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 7,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 505,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 7,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [],
+    "directives": [],
+    "leadingComments": null,
+    "innerComments": [
+      {
+        "type": "CommentLine",
+        "value": " The task is to design and implement methods of an LRU cache.",
+        "start": 0,
+        "end": 63,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 63
+          }
+        }
+      },
+      {
+        "type": "CommentLine",
+        "value": " The class has two methods get() and set() which are defined as follows.",
+        "start": 64,
+        "end": 138,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 74
+          }
+        }
+      },
+      {
+        "type": "CommentLine",
+        "value": " get(x)   : Returns the value of the key x if the key exists in the cache otherwise returns -1.",
+        "start": 139,
+        "end": 236,
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 97
+          }
+        }
+      },
+      {
+        "type": "CommentLine",
+        "value": " set(x,y) : inserts the value if the key x is not already present.",
+        "start": 237,
+        "end": 305,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 68
+          }
+        }
+      },
+      {
+        "type": "CommentLine",
+        "value": " If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.",
+        "start": 306,
+        "end": 423,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 117
+          }
+        }
+      },
+      {
+        "type": "CommentLine",
+        "value": " In the constructor of the class the size of the cache should be intitialized.",
+        "start": 424,
+        "end": 504,
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 0
+          },
+          "end": {
+            "line": 6,
+            "column": 80
+          }
+        }
+      }
+    ]
+  },
+  "comments": [
+    {
+      "type": "CommentLine",
+      "value": " The task is to design and implement methods of an LRU cache.",
+      "start": 0,
+      "end": 63,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 63
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " The class has two methods get() and set() which are defined as follows.",
+      "start": 64,
+      "end": 138,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 74
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " get(x)   : Returns the value of the key x if the key exists in the cache otherwise returns -1.",
+      "start": 139,
+      "end": 236,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 97
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " set(x,y) : inserts the value if the key x is not already present.",
+      "start": 237,
+      "end": 305,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.",
+      "start": 306,
+      "end": 423,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 117
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " In the constructor of the class the size of the cache should be intitialized.",
+      "start": 424,
+      "end": 504,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 80
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentLine",
+      "value": " The task is to design and implement methods of an LRU cache.",
+      "start": 0,
+      "end": 63,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 63
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " The class has two methods get() and set() which are defined as follows.",
+      "start": 64,
+      "end": 138,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 74
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " get(x)   : Returns the value of the key x if the key exists in the cache otherwise returns -1.",
+      "start": 139,
+      "end": 236,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 97
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " set(x,y) : inserts the value if the key x is not already present.",
+      "start": 237,
+      "end": 305,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.",
+      "start": 306,
+      "end": 423,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 117
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " In the constructor of the class the size of the cache should be intitialized.",
+      "start": 424,
+      "end": 504,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 80
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 505,
+      "end": 505,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

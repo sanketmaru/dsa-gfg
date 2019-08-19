@@ -1,0 +1,80 @@
+{
+  "coverage": "65.57%",
+  "expectCount": 61,
+  "actualCount": 40,
+  "files": {
+    "src/index.ts": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        12
+      ]
+    },
+    "src/linkedlist/count-nodes.ts": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/linkedlist/linked-list.ts": {
+      "expectCount": 12,
+      "actualCount": 8,
+      "undocumentLines": [
+        9,
+        10,
+        11,
+        22
+      ]
+    },
+    "src/queue/queue-node.ts": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        10,
+        11,
+        12,
+        23
+      ]
+    },
+    "src/queue/queue.ts": {
+      "expectCount": 7,
+      "actualCount": 6,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "src/stack/stack-node.ts": {
+      "expectCount": 9,
+      "actualCount": 5,
+      "undocumentLines": [
+        9,
+        10,
+        11,
+        22
+      ]
+    },
+    "src/stack/stack.ts": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        11,
+        19
+      ]
+    },
+    "src/stack/two-stacks.ts": {
+      "expectCount": 11,
+      "actualCount": 7,
+      "undocumentLines": [
+        9,
+        17,
+        18,
+        19
+      ]
+    },
+    "src/star/star.ts": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    }
+  }
+}
