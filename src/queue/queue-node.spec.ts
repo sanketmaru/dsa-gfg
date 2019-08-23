@@ -1,14 +1,14 @@
-import { Queue } from "./queue";
+import { QueueNodeImpl } from "./queue-node";
 
-test("basic queue test using a array", () => {
-  const queue = new Queue();
+test("basic queue test using a linked list", () => {
+  const queue = new QueueNodeImpl();
   queue.add(1);
   queue.poll();
   expect(queue.isEmpty()).toBe(true);
 });
 
 test("insert 5 elements and remove 1, length should be 4", () => {
-  const queue = new Queue();
+  const queue = new QueueNodeImpl();
   queue.add(1);
   queue.add(2);
   queue.add(3);
@@ -24,8 +24,4 @@ test("insert 5 elements and remove 1, length should be 4", () => {
   queue.poll();
   queue.poll();
   expect(queue.values()).toEqual([5, 6]);
-  queue.add(7);
-  queue.add(8);
-  // reverse a queue
-  expect(queue.reverse()).toEqual([8, 7, 6, 5]);
 });
