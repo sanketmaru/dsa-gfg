@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/stack/remove-consecutive-duplicates.ts | dsa-gfg</title>
+  <title data-ice="title">src/queue/queue.spec.ts | dsa-gfg</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -40,19 +40,38 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/stack/remove-consecutive-duplicates.ts</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// Stacks can be used to remove duplicate characters from a string that are stacked next to each other.
-// For example, we take the string aabbccccc and convert it into abc.
-// We can push the first character into a stack and skip if the top of the stack is equal to current character.
+<div class="content" data-ice="content"><h1 data-ice="title">src/queue/queue.spec.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { Queue } from &quot;./queue&quot;;
 
-// Input:
-// 2
-// aaaaaabaabccccccc
-// abbccbcd
+test(&quot;basic queue test using a array&quot;, () =&gt; {
+  const queue = new Queue();
+  queue.add(1);
+  queue.poll();
+  expect(queue.isEmpty()).toBe(true);
+});
 
-// Output:
-// ababc
-// abcbcd
+test(&quot;insert 5 elements and remove 1, length should be 4&quot;, () =&gt; {
+  const queue = new Queue();
+  queue.add(1);
+  queue.add(2);
+  queue.add(3);
+  queue.add(4);
+  queue.add(5);
+  queue.poll();
+  expect(queue.size()).toEqual(4);
+  expect(queue.values()).toEqual([2, 3, 4, 5]);
+  queue.poll();
+  expect(queue.values()).toEqual([3, 4, 5]);
+  queue.add(6);
+  expect(queue.values()).toEqual([3, 4, 5, 6]);
+  queue.poll();
+  queue.poll();
+  expect(queue.values()).toEqual([5, 6]);
+  queue.add(7);
+  queue.add(8);
+  // reverse a queue
+  expect(queue.reverse()).toEqual([8, 7, 6, 5]);
+});
 </code></pre>
 
 </div>

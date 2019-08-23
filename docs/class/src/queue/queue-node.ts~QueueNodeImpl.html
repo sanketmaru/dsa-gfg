@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">Queue | dsa-gfg</title>
+  <title data-ice="title">QueueNodeImpl | dsa-gfg</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -41,17 +41,17 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {Queue} from &apos;<span><a href="file/src/queue/queue.ts.html#lineNumber5">dsa-gfg/src/queue/queue.ts</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import {QueueNodeImpl} from &apos;<span><a href="file/src/queue/queue-node.ts.html#lineNumber18">dsa-gfg/src/queue/queue-node.ts</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/queue/queue.ts.html#lineNumber5">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/queue/queue-node.ts.html#lineNumber18">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
-  <h1 data-ice="name">Queue</h1>
+  <h1 data-ice="name">QueueNodeImpl</h1>
 
   
 
@@ -67,7 +67,8 @@
 
   
   
-  
+  <div class="description" data-ice="description"><p>This class is implementation of Queue using linked list</p>
+</div>
   
 
   
@@ -99,7 +100,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-constructor-constructor">constructor</a></span></span><span class="code" data-ice="signature">()</span>
         </p>
       </div>
       <div>
@@ -134,7 +135,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-member-arr">arr</a></span></span><span class="code" data-ice="signature">: <span><span>*</span><span>[]</span></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-member-front">front</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -162,35 +163,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-member-front">front</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-member-rear">rear</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-member-rear">rear</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -225,13 +198,13 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-method-add">add</a></span></span><span class="code" data-ice="signature">(a: <span>T</span>)</span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-add">add</a></span></span><span class="code" data-ice="signature">(a: <span>T</span>)</span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>The method add to push element into the queue</p>
+        <div data-ice="description"><p>This function should add an item at rear</p>
 </div>
       </div>
     </td>
@@ -254,7 +227,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-method-isEmpty">isEmpty</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-isEmpty">isEmpty</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -283,13 +256,14 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-method-poll">poll</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-poll">poll</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
         
         
-        <div data-ice="description"><p>The method pop which return the element poped out of the queue</p>
+        <div data-ice="description"><p>This function should remove front item from queue and
+return the removed item</p>
 </div>
       </div>
     </td>
@@ -312,36 +286,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-method-reverse">reverse</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>This function Reverses a Queue</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-          
-          
-          
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-method-size">size</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-size">size</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
         </p>
       </div>
       <div>
@@ -370,7 +315,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html#instance-method-values">values</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-values">values</a></span></span><span class="code" data-ice="signature">(): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -407,7 +352,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber11">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber22">source</a></span></span>
     </span>
   </h3>
 
@@ -442,49 +387,6 @@
 <div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
 
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-member-arr">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">arr</span><span class="code" data-ice="signature">: <span><span>*</span><span>[]</span></span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber8">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-member-front">
     <span class="access" data-ice="access">public</span>
     
@@ -492,11 +394,11 @@
     
     
     
-    <span class="code" data-ice="name">front</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="code" data-ice="name">front</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber6">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber19">source</a></span></span>
     </span>
   </h3>
 
@@ -535,11 +437,11 @@
     
     
     
-    <span class="code" data-ice="name">rear</span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+    <span class="code" data-ice="name">rear</span><span class="code" data-ice="signature">: <span>*</span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber7">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber20">source</a></span></span>
     </span>
   </h3>
 
@@ -585,14 +487,14 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber19">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber26">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>The method add to push element into the queue</p>
+  <div data-ice="description"><p>This function should add an item at rear</p>
 </div>
 
   
@@ -645,7 +547,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber42">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber63">source</a></span></span>
     </span>
   </h3>
 
@@ -701,70 +603,15 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber27">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber45">source</a></span></span>
     </span>
   </h3>
 
   
   
   
-  <div data-ice="description"><p>The method pop which return the element poped out of the queue</p>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  <div class="return-params" data-ice="returnParams">
-    <h4>Return:</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
-          
-        </tr>
-      </tbody>
-    </table>
-    <div data-ice="returnProperties">
-</div>
-  </div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-reverse">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    
-    <span class="code" data-ice="name">reverse</span><span class="code" data-ice="signature">(): <span>*</span></span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber70">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>This function Reverses a Queue</p>
+  <div data-ice="description"><p>This function should remove front item from queue and
+return the removed item</p>
 </div>
 
   
@@ -813,7 +660,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber50">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber71">source</a></span></span>
     </span>
   </h3>
 
@@ -869,7 +716,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/queue/queue.ts.html#lineNumber58">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/queue/queue-node.ts.html#lineNumber88">source</a></span></span>
     </span>
   </h3>
 

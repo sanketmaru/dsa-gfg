@@ -1,8 +1,26 @@
 window.esdocSearchIndex = [
   [
+    "dsa-gfg/src/trees/level-order-traversal.ts~levelordertraversal",
+    "class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html",
+    "<span>LevelOrderTraversal</span> <span class=\"search-result-import-path\">dsa-gfg/src/trees/level-order-traversal.ts</span>",
+    "class"
+  ],
+  [
+    "dsa-gfg/src/linkedlist/linked-list.ts~linkedlist",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html",
+    "<span>LinkedList</span> <span class=\"search-result-import-path\">dsa-gfg/src/linkedlist/linked-list.ts</span>",
+    "class"
+  ],
+  [
     "dsa-gfg/src/queue/queue.ts~queue",
     "class/src/queue/queue.ts~Queue.html",
     "<span>Queue</span> <span class=\"search-result-import-path\">dsa-gfg/src/queue/queue.ts</span>",
+    "class"
+  ],
+  [
+    "dsa-gfg/src/queue/queue-node.ts~queuenodeimpl",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html",
+    "<span>QueueNodeImpl</span> <span class=\"search-result-import-path\">dsa-gfg/src/queue/queue-node.ts</span>",
     "class"
   ],
   [
@@ -15,6 +33,12 @@ window.esdocSearchIndex = [
     "dsa-gfg/src/stack/two-stacks.ts~stacks",
     "class/src/stack/two-stacks.ts~Stacks.html",
     "<span>Stacks</span> <span class=\"search-result-import-path\">dsa-gfg/src/stack/two-stacks.ts</span>",
+    "class"
+  ],
+  [
+    "dsa-gfg/src/trees/tree-node.ts~treenode",
+    "class/src/trees/tree-node.ts~TreeNode.html",
+    "<span>TreeNode</span> <span class=\"search-result-import-path\">dsa-gfg/src/trees/tree-node.ts</span>",
     "class"
   ],
   [
@@ -312,10 +336,64 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/linkedlist/linked-list.spec.ts",
+    "file/src/linkedlist/linked-list.spec.ts.html",
+    "src/linkedlist/linked-list.spec.ts",
+    "file"
+  ],
+  [
     "src/linkedlist/linked-list.ts",
     "file/src/linkedlist/linked-list.ts.html",
     "src/linkedlist/linked-list.ts",
     "file"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#add",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-method-add",
+    "src/linkedlist/linked-list.ts~LinkedList#add",
+    "method"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#constructor",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-constructor-constructor",
+    "src/linkedlist/linked-list.ts~LinkedList#constructor",
+    "method"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#count",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-method-count",
+    "src/linkedlist/linked-list.ts~LinkedList#count",
+    "method"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#getnth",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-method-getNth",
+    "src/linkedlist/linked-list.ts~LinkedList#getNth",
+    "method"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#head",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-member-head",
+    "src/linkedlist/linked-list.ts~LinkedList#head",
+    "member"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#insertatend",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-method-insertAtEnd",
+    "src/linkedlist/linked-list.ts~LinkedList#insertAtEnd",
+    "method"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#tail",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-member-tail",
+    "src/linkedlist/linked-list.ts~LinkedList#tail",
+    "member"
+  ],
+  [
+    "src/linkedlist/linked-list.ts~linkedlist#values",
+    "class/src/linkedlist/linked-list.ts~LinkedList.html#instance-method-values",
+    "src/linkedlist/linked-list.ts~LinkedList#values",
+    "method"
   ],
   [
     "src/queue/lru-cache.ts",
@@ -330,9 +408,69 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/queue/queue-node.spec.ts",
+    "file/src/queue/queue-node.spec.ts.html",
+    "src/queue/queue-node.spec.ts",
+    "file"
+  ],
+  [
     "src/queue/queue-node.ts",
     "file/src/queue/queue-node.ts.html",
     "src/queue/queue-node.ts",
+    "file"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#add",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-add",
+    "src/queue/queue-node.ts~QueueNodeImpl#add",
+    "method"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#constructor",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-constructor-constructor",
+    "src/queue/queue-node.ts~QueueNodeImpl#constructor",
+    "method"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#front",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-member-front",
+    "src/queue/queue-node.ts~QueueNodeImpl#front",
+    "member"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#isempty",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-isEmpty",
+    "src/queue/queue-node.ts~QueueNodeImpl#isEmpty",
+    "method"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#poll",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-poll",
+    "src/queue/queue-node.ts~QueueNodeImpl#poll",
+    "method"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#rear",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-member-rear",
+    "src/queue/queue-node.ts~QueueNodeImpl#rear",
+    "member"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#size",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-size",
+    "src/queue/queue-node.ts~QueueNodeImpl#size",
+    "method"
+  ],
+  [
+    "src/queue/queue-node.ts~queuenodeimpl#values",
+    "class/src/queue/queue-node.ts~QueueNodeImpl.html#instance-method-values",
+    "src/queue/queue-node.ts~QueueNodeImpl#values",
+    "method"
+  ],
+  [
+    "src/queue/queue.spec.ts",
+    "file/src/queue/queue.spec.ts.html",
+    "src/queue/queue.spec.ts",
     "file"
   ],
   [
@@ -340,6 +478,12 @@ window.esdocSearchIndex = [
     "file/src/queue/queue.ts.html",
     "src/queue/queue.ts",
     "file"
+  ],
+  [
+    "src/queue/queue.ts~queue#add",
+    "class/src/queue/queue.ts~Queue.html#instance-method-add",
+    "src/queue/queue.ts~Queue#add",
+    "method"
   ],
   [
     "src/queue/queue.ts~queue#arr",
@@ -360,15 +504,15 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/queue/queue.ts~queue#pop",
-    "class/src/queue/queue.ts~Queue.html#instance-method-pop",
-    "src/queue/queue.ts~Queue#pop",
+    "src/queue/queue.ts~queue#isempty",
+    "class/src/queue/queue.ts~Queue.html#instance-method-isEmpty",
+    "src/queue/queue.ts~Queue#isEmpty",
     "method"
   ],
   [
-    "src/queue/queue.ts~queue#push",
-    "class/src/queue/queue.ts~Queue.html#instance-method-push",
-    "src/queue/queue.ts~Queue#push",
+    "src/queue/queue.ts~queue#poll",
+    "class/src/queue/queue.ts~Queue.html#instance-method-poll",
+    "src/queue/queue.ts~Queue#poll",
     "method"
   ],
   [
@@ -376,6 +520,24 @@ window.esdocSearchIndex = [
     "class/src/queue/queue.ts~Queue.html#instance-member-rear",
     "src/queue/queue.ts~Queue#rear",
     "member"
+  ],
+  [
+    "src/queue/queue.ts~queue#reverse",
+    "class/src/queue/queue.ts~Queue.html#instance-method-reverse",
+    "src/queue/queue.ts~Queue#reverse",
+    "method"
+  ],
+  [
+    "src/queue/queue.ts~queue#size",
+    "class/src/queue/queue.ts~Queue.html#instance-method-size",
+    "src/queue/queue.ts~Queue#size",
+    "method"
+  ],
+  [
+    "src/queue/queue.ts~queue#values",
+    "class/src/queue/queue.ts~Queue.html#instance-method-values",
+    "src/queue/queue.ts~Queue#values",
+    "method"
   ],
   [
     "src/queue/reverse-k-elements.ts",
@@ -393,6 +555,12 @@ window.esdocSearchIndex = [
     "src/stack/stack-node.ts",
     "file/src/stack/stack-node.ts.html",
     "src/stack/stack-node.ts",
+    "file"
+  ],
+  [
+    "src/stack/stack.spec.ts",
+    "file/src/stack/stack.spec.ts.html",
+    "src/stack/stack.spec.ts",
     "file"
   ],
   [
@@ -414,6 +582,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/stack/stack.ts~stack#isempty",
+    "class/src/stack/stack.ts~Stack.html#instance-method-isEmpty",
+    "src/stack/stack.ts~Stack#isEmpty",
+    "method"
+  ],
+  [
     "src/stack/stack.ts~stack#pop",
     "class/src/stack/stack.ts~Stack.html#instance-method-pop",
     "src/stack/stack.ts~Stack#pop",
@@ -426,10 +600,22 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/stack/stack.ts~stack#size",
+    "class/src/stack/stack.ts~Stack.html#instance-method-size",
+    "src/stack/stack.ts~Stack#size",
+    "method"
+  ],
+  [
     "src/stack/stack.ts~stack#top",
     "class/src/stack/stack.ts~Stack.html#instance-member-top",
     "src/stack/stack.ts~Stack#top",
     "member"
+  ],
+  [
+    "src/stack/stack.ts~stack#values",
+    "class/src/stack/stack.ts~Stack.html#instance-method-values",
+    "src/stack/stack.ts~Stack#values",
+    "method"
   ],
   [
     "src/stack/two-stacks.ts",
@@ -466,5 +652,59 @@ window.esdocSearchIndex = [
     "file/src/star/star.ts.html",
     "src/star/star.ts",
     "file"
+  ],
+  [
+    "src/trees/level-order-spiral.ts",
+    "file/src/trees/level-order-spiral.ts.html",
+    "src/trees/level-order-spiral.ts",
+    "file"
+  ],
+  [
+    "src/trees/level-order-traversal-line.ts",
+    "file/src/trees/level-order-traversal-line.ts.html",
+    "src/trees/level-order-traversal-line.ts",
+    "file"
+  ],
+  [
+    "src/trees/level-order-traversal.spec.ts",
+    "file/src/trees/level-order-traversal.spec.ts.html",
+    "src/trees/level-order-traversal.spec.ts",
+    "file"
+  ],
+  [
+    "src/trees/level-order-traversal.ts",
+    "file/src/trees/level-order-traversal.ts.html",
+    "src/trees/level-order-traversal.ts",
+    "file"
+  ],
+  [
+    "src/trees/level-order-traversal.ts~levelordertraversal#levelorder",
+    "class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html#instance-method-levelOrder",
+    "src/trees/level-order-traversal.ts~LevelOrderTraversal#levelOrder",
+    "method"
+  ],
+  [
+    "src/trees/tree-node.ts",
+    "file/src/trees/tree-node.ts.html",
+    "src/trees/tree-node.ts",
+    "file"
+  ],
+  [
+    "src/trees/tree-node.ts~treenode#constructor",
+    "class/src/trees/tree-node.ts~TreeNode.html#instance-constructor-constructor",
+    "src/trees/tree-node.ts~TreeNode#constructor",
+    "method"
+  ],
+  [
+    "src/trees/tree-node.ts~treenode#data",
+    "class/src/trees/tree-node.ts~TreeNode.html#instance-member-data",
+    "src/trees/tree-node.ts~TreeNode#data",
+    "member"
+  ],
+  [
+    "src/trees/tree-node.ts~treenode#left",
+    "class/src/trees/tree-node.ts~TreeNode.html#instance-member-left",
+    "src/trees/tree-node.ts~TreeNode#left",
+    "member"
   ]
 ]

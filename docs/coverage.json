@@ -1,7 +1,7 @@
 {
-  "coverage": "65.57%",
-  "expectCount": 61,
-  "actualCount": 40,
+  "coverage": "69.23%",
+  "expectCount": 78,
+  "actualCount": 54,
   "files": {
     "src/index.ts": {
       "expectCount": 2,
@@ -17,8 +17,8 @@
       "undocumentLines": []
     },
     "src/linkedlist/linked-list.ts": {
-      "expectCount": 12,
-      "actualCount": 8,
+      "expectCount": 13,
+      "actualCount": 9,
       "undocumentLines": [
         9,
         10,
@@ -27,20 +27,20 @@
       ]
     },
     "src/queue/queue-node.ts": {
-      "expectCount": 10,
-      "actualCount": 6,
+      "expectCount": 13,
+      "actualCount": 9,
       "undocumentLines": [
+        9,
         10,
         11,
-        12,
-        23
+        22
       ]
     },
     "src/queue/queue.ts": {
-      "expectCount": 7,
-      "actualCount": 6,
+      "expectCount": 11,
+      "actualCount": 10,
       "undocumentLines": [
-        9
+        11
       ]
     },
     "src/stack/stack-node.ts": {
@@ -54,8 +54,8 @@
       ]
     },
     "src/stack/stack.ts": {
-      "expectCount": 6,
-      "actualCount": 4,
+      "expectCount": 9,
+      "actualCount": 7,
       "undocumentLines": [
         11,
         19
@@ -75,6 +75,20 @@
       "expectCount": 3,
       "actualCount": 3,
       "undocumentLines": []
+    },
+    "src/trees/level-order-traversal.ts": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "src/trees/tree-node.ts": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        8,
+        9,
+        10
+      ]
     }
   }
 }

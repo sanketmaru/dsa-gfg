@@ -29,50 +29,93 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#linkedlist">linkedlist</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/linkedlist/linked-list.ts~LinkedList.html">LinkedList</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html">QueueNodeImpl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stack">stack</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/stack.ts~Stack.html">Stack</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/two-stacks.ts~Stacks.html">Stacks</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html">LevelOrderTraversal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/queue/queue.ts</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// Implement a Queue using Array. Your task is only to complete the functions push and pop.
-export class Queue {
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { Stack } from &quot;../stack/stack&quot;;
+
+// Implement a Queue using Array. Your task is only to complete the functions push and pop.
+/* This is Queue class using array */
+export class Queue&lt;T&gt; {
     public front: number = 0;
     public rear: number = 0;
-    public arr: number[] = [];
+    public arr: T[] = [];
 
     constructor() {
         this.front = 0;
         this.rear = 0;
     }
 
-    /* The method push to push element
-	   into the queue */
-    public push(a: number) {
-        this.arr[this.front++] = a;
+    /** The method add to push element into the queue
+     * @param {number} a - this is a value.
+     * @return {void}
+     */
+    public add(a: T): void {
+        this.arr[this.rear++] = a;
     }
-    /* The method pop which return the 
-       element poped out of the queue*/
-    public pop() {
+
+    /** The method pop which return the element poped out of the queue
+     * @return {T} element which is removed
+     */
+    /* */
+    public poll(): T | undefined {
         // Your code
         if (this.front === this.rear) {
-            return -1;
+            return;
         }
-        return this.arr[this.rear++];
-// 	    if(arr.length &lt;= 0) {
-// 	        return -1;
-// 	    }
-// 		int element = arr[front];
-// 		++front;
-// 		int tempArr[] = new int[arr.length];
-// 		for(int i=front,j=0;i&lt;=arr.length - 1;i++,j++) {
-// 		    tempArr[j] = arr[i];
-// 		}
-// 		arr = tempArr;
-// 		rear = arr.length - 1;
-// 		return element;
+        const elem = this.arr[this.front];
+        delete this.arr[this.front];
+        this.front++;
+        return elem;
+    }
+
+    /**
+     * The method to check if queue is empty or not
+     * @return {boolean} true or false
+     */
+    public isEmpty(): boolean {
+        return this.rear - this.front === 0 ? true : false;
+    }
+
+    /**
+     * The method to return size of the queue
+     * @return {boolean} true or false
+     */
+    public size(): number {
+        return this.rear - this.front;
+    }
+
+    /**
+     * This function return the values of the queue
+     * @return {T[]} array of values
+     */
+    public values(): T[] {
+        const tempArr: T[] = [];
+        for (let i = this.front; i &lt; this.rear; i++) {
+            tempArr.push(this.arr[i]);
+        }
+        return tempArr;
+    }
+
+    /**
+     * This function Reverses a Queue
+     * @returns {T[]} array of values
+     */
+    public reverse(): T[] {
+        const stack = new Stack&lt;T&gt;();
+        this.values().forEach( (val) =&gt; {
+            stack.push(val);
+        });
+        return stack.values();
     }
 }
 </code></pre>

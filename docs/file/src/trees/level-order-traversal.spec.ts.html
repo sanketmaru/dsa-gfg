@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/stack/remove-consecutive-duplicates.ts | dsa-gfg</title>
+  <title data-ice="title">src/trees/level-order-traversal.spec.ts | dsa-gfg</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -40,19 +40,40 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/stack/remove-consecutive-duplicates.ts</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// Stacks can be used to remove duplicate characters from a string that are stacked next to each other.
-// For example, we take the string aabbccccc and convert it into abc.
-// We can push the first character into a stack and skip if the top of the stack is equal to current character.
+<div class="content" data-ice="content"><h1 data-ice="title">src/trees/level-order-traversal.spec.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { LevelOrderTraversal } from &quot;./level-order-traversal&quot;;
+import TreeNode from &quot;./tree-node&quot;;
+let levelOrderTraversal: LevelOrderTraversal;
 
-// Input:
-// 2
-// aaaaaabaabccccccc
-// abbccbcd
+beforeEach( () =&gt; {
+    levelOrderTraversal = new LevelOrderTraversal();
+});
 
-// Output:
-// ababc
-// abcbcd
+test(&quot;basic test for level order traversal&quot;, () =&gt; {
+  const tree = new TreeNode&lt;number&gt;(1);
+  tree.left = new TreeNode&lt;number&gt;(3);
+  tree.right = new TreeNode&lt;number&gt;(2);
+  let outputData = &quot;&quot;;
+  const storeLog = (inputs: any) =&gt; (outputData += inputs);
+  // tslint:disable-next-line: no-console
+  console.log = jest.fn(storeLog);
+  // levelOrderTraversal.levelOrder(tree);
+  expect(outputData).toBe(&quot;&quot;);
+});
+
+test(&quot;level order traversal for more elements&quot;, () =&gt; {
+    const tree = new TreeNode&lt;number&gt;(10);
+    tree.left = new TreeNode&lt;number&gt;(20);
+    tree.right = new TreeNode&lt;number&gt;(30);
+    tree.left.left = new TreeNode&lt;number&gt;(40);
+    tree.left.right = new TreeNode&lt;number&gt;(60);
+    let outputData = &quot;&quot;;
+    const storeLog = (inputs: any) =&gt; (outputData += inputs);
+    // tslint:disable-next-line: no-console
+    console.log = jest.fn(storeLog);
+    // levelOrderTraversal.levelOrder(tree);
+    expect(outputData).toBe(&quot;&quot;);
+  });
 </code></pre>
 
 </div>

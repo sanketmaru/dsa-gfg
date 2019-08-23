@@ -29,33 +29,44 @@
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#linkedlist">linkedlist</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/linkedlist/linked-list.ts~LinkedList.html">LinkedList</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html">QueueNodeImpl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stack">stack</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/stack.ts~Stack.html">Stack</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/two-stacks.ts~Stacks.html">Stacks</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html">LevelOrderTraversal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/queue/queue-node.ts</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*This is a function problem.You only need to complete the function given below*/
-/*The structure of the node of the queue is*/
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*The structure of the node of the queue is*/
 
-class QueueNode {
-    public data: number;
-    public next: QueueNode | null;
-    constructor(a: number) {
+/**
+ * This is Queue Node
+ */
+class QueueNode&lt;T&gt; {
+    public data: T;
+    public next: QueueNode&lt;T&gt; | null;
+    constructor(a: T) {
         this.data = a;
         this.next = null;
     }
 }
+/**
+ * This class is implementation of Queue using linked list
+ */
 // tslint:disable-next-line: max-classes-per-file
-class MyQueue {
-    public front: QueueNode | null = null;
-    public rear: QueueNode | null = null;
+export class QueueNodeImpl&lt;T&gt; {
+    public front: QueueNode&lt;T&gt; | null = null;
+    public rear: QueueNode&lt;T&gt; | null = null;
 
-    // This function should add an item at
-    // rear
-    public push(a: number) {
+    /**
+     * This function should add an item at rear
+     * @param a
+     */
+    public add(a: T) {
         // Your code here
         const temp = new QueueNode(a);
         if (this.front == null) {
@@ -69,14 +80,15 @@ class MyQueue {
         }
     }
 
-    // This function should remove front
-    // item from queue and should return
-    // the removed item.
-    public pop() {
+    /**
+     * This function should remove front item from queue and
+     * return the removed item
+     * @return {T} item removed
+     */
+    public poll(): T | undefined {
         if (this.front == null) {
-            return -1;
+            return undefined;
         }
-        // Your code here
         if (this.rear === this.front) {
             const data = this.front.data;
             this.front = this.rear = null;
@@ -85,6 +97,49 @@ class MyQueue {
         const temp = this.front;
         this.front = temp.next;
         return temp.data;
+    }
+
+    /**
+     * The method to check if queue is empty or not
+     * @return {boolean} true or false
+     */
+    public isEmpty(): boolean {
+        return this.front === this.rear ? true : false;
+    }
+
+    /**
+     * The method to return size of the queue
+     * @return {boolean} true or false
+     */
+    public size(): number {
+        if (this.front === null) {
+            return 0;
+        }
+        let size = 1;
+        let temp = this.front;
+        while (temp.next != null) {
+            size++;
+            temp = temp.next;
+        }
+        return size;
+    }
+
+    /**
+     * This function return the values of the queue
+     * @return {T[]} array of values
+     */
+    public values(): T[] {
+        const tempArr: T[] = [];
+        if (this.front === null) {
+            return [];
+        }
+        let temp = this.front;
+        tempArr.push(temp.data);
+        while (temp.next != null) {
+            temp = temp.next;
+            tempArr.push(temp.data);
+        }
+        return tempArr;
     }
 }
 </code></pre>
