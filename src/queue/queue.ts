@@ -5,11 +5,12 @@ import { Stack } from "../stack/stack";
 export class Queue<T> {
     public front: number = 0;
     public rear: number = 0;
-    public arr: T[] = [];
+    public arr: T[];
 
-    constructor() {
+    constructor(size: number = 10) {
         this.front = 0;
         this.rear = 0;
+        this.arr = new Array(size);
     }
 
     /** The method add to push element into the queue

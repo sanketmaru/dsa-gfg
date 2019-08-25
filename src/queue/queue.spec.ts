@@ -8,7 +8,7 @@ test("basic queue test using a array", () => {
 });
 
 test("insert 5 elements and remove 1, length should be 4", () => {
-  const queue = new Queue();
+  const queue = new Queue(10);
   queue.add(1);
   queue.add(2);
   queue.add(3);

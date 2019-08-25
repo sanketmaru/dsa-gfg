@@ -6,4 +6,5 @@ export default class TreeNode<T> {
         this.data = item;
         this.left = this.right = null;
     }
+
 }
