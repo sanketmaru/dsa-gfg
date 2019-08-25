@@ -1,14 +1,14 @@
 {
-  "coverage": "69.23%",
-  "expectCount": 78,
-  "actualCount": 54,
+  "coverage": "70.11%",
+  "expectCount": 87,
+  "actualCount": 61,
   "files": {
     "src/index.ts": {
       "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        5,
-        12
+        4,
+        9
       ]
     },
     "src/linkedlist/count-nodes.ts": {
@@ -26,6 +26,13 @@
         22
       ]
     },
+    "src/queue/lru-cache.ts": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        9
+      ]
+    },
     "src/queue/queue-node.ts": {
       "expectCount": 13,
       "actualCount": 9,
@@ -38,9 +45,10 @@
     },
     "src/queue/queue.ts": {
       "expectCount": 11,
-      "actualCount": 10,
+      "actualCount": 9,
       "undocumentLines": [
-        11
+        11,
+        32
       ]
     },
     "src/stack/stack-node.ts": {
@@ -76,7 +84,7 @@
       "actualCount": 3,
       "undocumentLines": []
     },
-    "src/trees/level-order-traversal.ts": {
+    "src/trees/level-order-spiral.ts": {
       "expectCount": 2,
       "actualCount": 2,
       "undocumentLines": []
@@ -89,6 +97,11 @@
         9,
         10
       ]
+    },
+    "src/trees/tree-operations.ts": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
     }
   }
 }

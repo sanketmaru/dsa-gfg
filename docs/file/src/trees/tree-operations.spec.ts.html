@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/index.ts | dsa-gfg</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/trees/tree-operations.spec.ts | dsa-gfg</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -42,24 +42,63 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/index.ts</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { Queue } from &quot;./queue/queue&quot;;
-import { Stack } from &quot;./stack/stack&quot;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/trees/tree-operations.spec.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import TreeNode from &quot;./tree-node&quot;;
+import { TreeOperations } from &quot;./tree-operations&quot;;
 
-console.log(&quot;Creating stacks&quot;);
+let treeOps: TreeOperations&lt;number&gt;;
 
-const stack = new Stack();
-stack.push(1);
-stack.push(2);
+beforeEach( () =&gt; {
+    treeOps = new TreeOperations&lt;number&gt;();
+});
 
-console.log(&quot;stack items&quot;, stack);
+test(&quot;basic test for level order traversal&quot;, () =&gt; {
+  const tree = new TreeNode&lt;number&gt;(1);
+  tree.left = new TreeNode&lt;number&gt;(3);
+  tree.right = new TreeNode&lt;number&gt;(2);
+  let outputData = &quot;&quot;;
+  const storeLog = (inputs: any) =&gt; (outputData += inputs);
+  console.log = jest.fn(storeLog);
+  treeOps.levelOrder(tree);
+  expect(outputData).toBe(&quot;1 3 2 &quot;);
+});
 
-console.log(&quot;Creating Queue&quot;);
-const queue = new Queue();
-queue.add(2);
-queue.add(3);
+test(&quot;level order traversal for more elements&quot;, () =&gt; {
+    const tree = new TreeNode&lt;number&gt;(10);
+    tree.left = new TreeNode&lt;number&gt;(20);
+    tree.right = new TreeNode&lt;number&gt;(30);
+    tree.left.left = new TreeNode&lt;number&gt;(40);
+    tree.left.right = new TreeNode&lt;number&gt;(60);
+    let outputData = &quot;&quot;;
+    const storeLog = (inputs: any) =&gt; (outputData += inputs);
+    console.log = jest.fn(storeLog);
+    treeOps.levelOrder(tree);
+    expect(outputData).toBe(&quot;10 20 30 40 60 &quot;);
+});
 
-console.log(&quot;queue items&quot;, queue);
+test(&quot;basic test for level order traversal&quot;, () =&gt; {
+    const tree = new TreeNode&lt;number&gt;(1);
+    tree.left = new TreeNode&lt;number&gt;(3);
+    tree.right = new TreeNode&lt;number&gt;(2);
+    let outputData = &quot;&quot;;
+    const storeLog = (inputs: any) =&gt; (outputData += inputs);
+    console.log = jest.fn(storeLog);
+    treeOps.levelOrderByLine(tree);
+    expect(outputData).toBe(&quot;1 $ 3 2 $ &quot;);
+});
+
+test(&quot;level order traversal for more elements&quot;, () =&gt; {
+      const tree = new TreeNode&lt;number&gt;(10);
+      tree.left = new TreeNode&lt;number&gt;(20);
+      tree.right = new TreeNode&lt;number&gt;(30);
+      tree.left.left = new TreeNode&lt;number&gt;(40);
+      tree.left.right = new TreeNode&lt;number&gt;(60);
+      let outputData = &quot;&quot;;
+      const storeLog = (inputs: any) =&gt; (outputData += inputs);
+      console.log = jest.fn(storeLog);
+      treeOps.levelOrderByLine(tree);
+      expect(outputData).toBe(&quot;10 $ 20 30 $ 40 60 $ &quot;);
+});
 </code></pre>
 
 </div>

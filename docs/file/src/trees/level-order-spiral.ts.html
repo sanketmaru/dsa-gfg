@@ -30,82 +30,48 @@
   <ul>
     
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#linkedlist">linkedlist</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/linkedlist/linked-list.ts~LinkedList.html">LinkedList</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html">QueueNodeImpl</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/lru-cache.ts~LRUCache.html">LRUCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html">QueueNodeImpl</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stack">stack</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/stack.ts~Stack.html">Stack</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/two-stacks.ts~Stacks.html">Stacks</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html">LevelOrderTraversal</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-spiral.ts~Spiral.html">Spiral</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-operations.ts~TreeOperations.html">TreeOperations</a></span></span></li>
 </ul>
 </div>
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/trees/level-order-spiral.ts</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// package trees;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">
 
-// import java.util.LinkedList;
-// import java.util.Queue;
 
-// Complete the function to print spiral order traversal of a tree. 
-
-// Testcase1: The tree is
-//         1
-//      /      \
-//    3       2
-// So, the spiral level order would be 1 3 2
-// Testcase2: The tree is
-//                            10
-//                         /        \
-//                      20         30
-//                   /       \
-//                40       60
-//                /         \
-//             50   55    70  80 
-// So, the spiral level order would be 10 20 30 60 40
-
-// A Binary Tree node
-// class Node
-// {
-//     int data;
-//     Node left, right;
-//     Node(int item)
-//     {
-//         data = item;
-//         left = right = null;
-//     }
-// }
-
-// class Spiral
-// {
-//     void printSpiral(Node node) {
-//         Queue&lt;Node&gt; queue = new LinkedList&lt;Node&gt;(); 
-//         queue.add(node);
-//         boolean alternate = false;
-//         while(!queue.isEmpty()) {
-//             Node tempNode = queue.poll();
-//             Node left = tempNode.left;
-//             Node right = tempNode.right;
-//             System.out.print(tempNode.data + &quot; &quot;);
-            
-//             if (alternate) {
-//                 if(right != null) {
-//                     queue.add(right);    
-//                 }
-//                 if(left != null) {
-//                     queue.add(left);    
-//                 }
-//             } else {
-//                 if(left != null) {
-//                     queue.add(left);    
-//                 }
-//                 if(right != null) {
-//                     queue.add(right);    
-//                 }
-//             }
-//             alternate = !alternate;
-//         }
-//     }
-// }
+import { Queue } from &quot;../queue/queue&quot;;
+import TreeNode from &quot;./tree-node&quot;;
+export class Spiral&lt;T&gt; {
+    public printSpiral(node: TreeNode&lt;T&gt;) {
+        const queue = new Queue&lt;TreeNode&lt;T&gt;&gt;();
+        queue.add(node);
+        while (!queue.isEmpty()) {
+            const tempNode = queue.poll();
+            if (!tempNode) {
+                continue;
+            }
+            const size = queue.size();
+            for (let i = 0; i &lt; size; i++) {
+                console.log(tempNode.data + &quot; &quot;);
+                const left = tempNode.left;
+                const right = tempNode.right;
+                if (left != null) {
+                    queue.add(left);
+                }
+                if (right != null) {
+                    queue.add(right);
+                }
+            }
+        }
+    }
+}
 </code></pre>
 
 </div>

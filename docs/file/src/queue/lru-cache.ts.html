@@ -30,12 +30,14 @@
   <ul>
     
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#linkedlist">linkedlist</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/linkedlist/linked-list.ts~LinkedList.html">LinkedList</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html">QueueNodeImpl</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#queue">queue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/lru-cache.ts~LRUCache.html">LRUCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue-node.ts~QueueNodeImpl.html">QueueNodeImpl</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stack">stack</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/stack.ts~Stack.html">Stack</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/two-stacks.ts~Stacks.html">Stacks</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html">LevelOrderTraversal</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-spiral.ts~Spiral.html">Spiral</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-operations.ts~TreeOperations.html">TreeOperations</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -47,7 +49,22 @@
 // set(x,y) : inserts the value if the key x is not already present.
 // If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.
 // In the constructor of the class the size of the cache should be intitialized.
-</code></pre>
+import { Queue } from &quot;./queue&quot;;
+
+export class LRUCache&lt;T&gt; {
+    // This problem requires implementation of linkedhashmap.
+    constructor(size: number) {
+        // his.queue = new Queue(size);
+    }
+
+    public get(x: number) {
+        // empty
+    }
+
+    public set(x: T, y: T) {
+        // empty
+    }
+}</code></pre>
 
 </div>
 

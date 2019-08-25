@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl" href="../../">
-  <title data-ice="title">src/index.ts | dsa-gfg</title>
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/trees/tree-operations.ts | dsa-gfg</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -42,24 +42,114 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/index.ts</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { Queue } from &quot;./queue/queue&quot;;
-import { Stack } from &quot;./stack/stack&quot;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/trees/tree-operations.ts</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { Queue } from &quot;../queue/queue&quot;;
+import TreeNode from &quot;./tree-node&quot;;
+/**
+ * This is implementation of operations on a Tree
+ */
+export class TreeOperations&lt;T&gt; {
 
-console.log(&quot;Creating stacks&quot;);
+    /**
+     * You are given a tree and you need to do the level order traversal on this tree.
+     * Level order traversal of a tree is breadth-first traversal for the tree.
+     * Testcase1: The tree is
+     *         1
+     *      /      \
+     *    3       2
+     * So, the level order would be 1 3 2
+     * Testcase2: The tree is
+     *                           10
+     *                        /        \
+     *                     20         30
+     *                  /       \
+     *               40       60
+     * So, the level order would be 10 20 30 40 60
+     * @param node
+     */
+    public levelOrder(node: TreeNode&lt;T&gt;): void {
+        const queue = new Queue&lt;TreeNode&lt;T&gt;&gt;();
+        queue.add(node);
+        while (!queue.isEmpty()) {
+            const tempNode: TreeNode&lt;T&gt; | undefined = queue.poll();
+            if (tempNode) {
+                const left = tempNode.left;
+                const right = tempNode.right;
+                console.log(tempNode.data + &quot; &quot;);
+                if (left != null) {
+                    queue.add(left);
+                }
+                if (right != null) {
+                    queue.add(right);
+                }
+            }
+        }
+    }
+    /**
+     * Given a Binary Tree, your task is to print its level order traversal such that each level is separated by $.
+     * For the below tree the output will be 1 $ 2 3 $ 4 5 6 7 $ 8 $.
+     *           1
+     *        /     \
+     *      2        3
+     *    /    \     /   \
+     *   4     5   6    7
+     *     \
+     *      8
+     * @param node
+     */
+    public levelOrderByLine(node: TreeNode&lt;T&gt;): void {
+        const queue = new Queue&lt;TreeNode&lt;T&gt;&gt;();
+        queue.add(node);
+        while (true) {
+            let size = queue.size();
+            if (size === 0) {
+               break;
+            }
+            while (size &gt; 0) {
+                const tempNode = queue.poll();
+                if (!tempNode) {
+                    continue;
+                }
+                console.log(tempNode.data + &quot; &quot;);
+                const left = tempNode.left;
+                const right = tempNode.right;
+                if (left != null) {
+                    queue.add(left);
+                }
+                if (right != null) {
+                    queue.add(right);
+                }
+                size--;
+            }
+            console.log(&quot;$ &quot;);
+        }
+    }
 
-const stack = new Stack();
-stack.push(1);
-stack.push(2);
+    /**
+     * Complete the function to print spiral order traversal of a tree.
+     * Testcase1: The tree is
+     *         1
+     *      /      \
+     *    3       2
+     * So, the spiral level order would be 1 3 2
+     * Testcase2: The tree is
+     *                            10
+     *                         /        \
+     *                      20         30
+     *                   /       \
+     *                40       60
+     *                /         \
+     *             50   55    70  80
+     * So, the spiral level order would be 10 20 30 60 40
+     */
+    public spiral(node: TreeNode&lt;T&gt;): void {
 
-console.log(&quot;stack items&quot;, stack);
+    }
 
-console.log(&quot;Creating Queue&quot;);
-const queue = new Queue();
-queue.add(2);
-queue.add(3);
-
-console.log(&quot;queue items&quot;, queue);
+    public height(node: TreeNode&lt;T&gt;): number {
+        return 0;
+    }
+}
 </code></pre>
 
 </div>

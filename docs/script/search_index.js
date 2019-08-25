@@ -1,8 +1,8 @@
 window.esdocSearchIndex = [
   [
-    "dsa-gfg/src/trees/level-order-traversal.ts~levelordertraversal",
-    "class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html",
-    "<span>LevelOrderTraversal</span> <span class=\"search-result-import-path\">dsa-gfg/src/trees/level-order-traversal.ts</span>",
+    "dsa-gfg/src/queue/lru-cache.ts~lrucache",
+    "class/src/queue/lru-cache.ts~LRUCache.html",
+    "<span>LRUCache</span> <span class=\"search-result-import-path\">dsa-gfg/src/queue/lru-cache.ts</span>",
     "class"
   ],
   [
@@ -24,6 +24,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "dsa-gfg/src/trees/level-order-spiral.ts~spiral",
+    "class/src/trees/level-order-spiral.ts~Spiral.html",
+    "<span>Spiral</span> <span class=\"search-result-import-path\">dsa-gfg/src/trees/level-order-spiral.ts</span>",
+    "class"
+  ],
+  [
     "dsa-gfg/src/stack/stack.ts~stack",
     "class/src/stack/stack.ts~Stack.html",
     "<span>Stack</span> <span class=\"search-result-import-path\">dsa-gfg/src/stack/stack.ts</span>",
@@ -39,6 +45,12 @@ window.esdocSearchIndex = [
     "dsa-gfg/src/trees/tree-node.ts~treenode",
     "class/src/trees/tree-node.ts~TreeNode.html",
     "<span>TreeNode</span> <span class=\"search-result-import-path\">dsa-gfg/src/trees/tree-node.ts</span>",
+    "class"
+  ],
+  [
+    "dsa-gfg/src/trees/tree-operations.ts~treeoperations",
+    "class/src/trees/tree-operations.ts~TreeOperations.html",
+    "<span>TreeOperations</span> <span class=\"search-result-import-path\">dsa-gfg/src/trees/tree-operations.ts</span>",
     "class"
   ],
   [
@@ -324,6 +336,12 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/hashing/hash-map.ts",
+    "file/src/hashing/hash-map.ts.html",
+    "src/hashing/hash-map.ts",
+    "file"
+  ],
+  [
     "src/index.ts",
     "file/src/index.ts.html",
     "src/index.ts",
@@ -400,6 +418,24 @@ window.esdocSearchIndex = [
     "file/src/queue/lru-cache.ts.html",
     "src/queue/lru-cache.ts",
     "file"
+  ],
+  [
+    "src/queue/lru-cache.ts~lrucache#constructor",
+    "class/src/queue/lru-cache.ts~LRUCache.html#instance-constructor-constructor",
+    "src/queue/lru-cache.ts~LRUCache#constructor",
+    "method"
+  ],
+  [
+    "src/queue/lru-cache.ts~lrucache#get",
+    "class/src/queue/lru-cache.ts~LRUCache.html#instance-method-get",
+    "src/queue/lru-cache.ts~LRUCache#get",
+    "method"
+  ],
+  [
+    "src/queue/lru-cache.ts~lrucache#set",
+    "class/src/queue/lru-cache.ts~LRUCache.html#instance-method-set",
+    "src/queue/lru-cache.ts~LRUCache#set",
+    "method"
   ],
   [
     "src/queue/maximum-subarrays.ts",
@@ -540,12 +576,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/queue/reverse-k-elements.ts",
-    "file/src/queue/reverse-k-elements.ts.html",
-    "src/queue/reverse-k-elements.ts",
-    "file"
-  ],
-  [
     "src/stack/remove-consecutive-duplicates.ts",
     "file/src/stack/remove-consecutive-duplicates.ts.html",
     "src/stack/remove-consecutive-duplicates.ts",
@@ -660,27 +690,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/trees/level-order-traversal-line.ts",
-    "file/src/trees/level-order-traversal-line.ts.html",
-    "src/trees/level-order-traversal-line.ts",
-    "file"
-  ],
-  [
-    "src/trees/level-order-traversal.spec.ts",
-    "file/src/trees/level-order-traversal.spec.ts.html",
-    "src/trees/level-order-traversal.spec.ts",
-    "file"
-  ],
-  [
-    "src/trees/level-order-traversal.ts",
-    "file/src/trees/level-order-traversal.ts.html",
-    "src/trees/level-order-traversal.ts",
-    "file"
-  ],
-  [
-    "src/trees/level-order-traversal.ts~levelordertraversal#levelorder",
-    "class/src/trees/level-order-traversal.ts~LevelOrderTraversal.html#instance-method-levelOrder",
-    "src/trees/level-order-traversal.ts~LevelOrderTraversal#levelOrder",
+    "src/trees/level-order-spiral.ts~spiral#printspiral",
+    "class/src/trees/level-order-spiral.ts~Spiral.html#instance-method-printSpiral",
+    "src/trees/level-order-spiral.ts~Spiral#printSpiral",
     "method"
   ],
   [
@@ -706,5 +718,41 @@ window.esdocSearchIndex = [
     "class/src/trees/tree-node.ts~TreeNode.html#instance-member-left",
     "src/trees/tree-node.ts~TreeNode#left",
     "member"
+  ],
+  [
+    "src/trees/tree-operations.spec.ts",
+    "file/src/trees/tree-operations.spec.ts.html",
+    "src/trees/tree-operations.spec.ts",
+    "file"
+  ],
+  [
+    "src/trees/tree-operations.ts",
+    "file/src/trees/tree-operations.ts.html",
+    "src/trees/tree-operations.ts",
+    "file"
+  ],
+  [
+    "src/trees/tree-operations.ts~treeoperations#height",
+    "class/src/trees/tree-operations.ts~TreeOperations.html#instance-method-height",
+    "src/trees/tree-operations.ts~TreeOperations#height",
+    "method"
+  ],
+  [
+    "src/trees/tree-operations.ts~treeoperations#levelorder",
+    "class/src/trees/tree-operations.ts~TreeOperations.html#instance-method-levelOrder",
+    "src/trees/tree-operations.ts~TreeOperations#levelOrder",
+    "method"
+  ],
+  [
+    "src/trees/tree-operations.ts~treeoperations#levelorderbyline",
+    "class/src/trees/tree-operations.ts~TreeOperations.html#instance-method-levelOrderByLine",
+    "src/trees/tree-operations.ts~TreeOperations#levelOrderByLine",
+    "method"
+  ],
+  [
+    "src/trees/tree-operations.ts~treeoperations#spiral",
+    "class/src/trees/tree-operations.ts~TreeOperations.html#instance-method-spiral",
+    "src/trees/tree-operations.ts~TreeOperations#spiral",
+    "method"
   ]
 ]

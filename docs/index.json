@@ -566,8 +566,19 @@
   {
     "__docId__": 48,
     "kind": "file",
+    "name": "src/hashing/hash-map.ts",
+    "content": "",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/hashing/hash-map.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "file",
     "name": "src/index.ts",
-    "content": "import { Queue } from \"./queue/queue\";\nimport { Stack } from \"./stack/stack\";\n\n// tslint:disable-next-line: no-console\nconsole.log(\"Creating stacks\");\n\nconst stack = new Stack();\nstack.push(1);\nstack.push(2);\n\n// tslint:disable-next-line: no-console\nconsole.log(\"stack items\", stack);\n\n// tslint:disable-next-line: no-console\nconsole.log(\"Creating Queue\");\nconst queue = new Queue();\nqueue.push(2);\nqueue.push(3);\n\n// tslint:disable-next-line: no-console\nconsole.log(\"queue items\", queue);\n",
+    "content": "import { Queue } from \"./queue/queue\";\nimport { Stack } from \"./stack/stack\";\n\nconsole.log(\"Creating stacks\");\n\nconst stack = new Stack();\nstack.push(1);\nstack.push(2);\n\nconsole.log(\"stack items\", stack);\n\nconsole.log(\"Creating Queue\");\nconst queue = new Queue();\nqueue.add(2);\nqueue.add(3);\n\nconsole.log(\"queue items\", queue);\n",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/index.ts",
     "access": "public",
@@ -575,7 +586,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 49,
+    "__docId__": 50,
     "kind": "variable",
     "name": "stack",
     "memberof": "src/index.ts",
@@ -586,7 +597,7 @@
     "importPath": "dsa-gfg/src/index.ts",
     "importStyle": null,
     "description": null,
-    "lineNumber": 5,
+    "lineNumber": 4,
     "undocument": true,
     "type": {
       "types": [
@@ -596,7 +607,7 @@
     "ignore": true
   },
   {
-    "__docId__": 50,
+    "__docId__": 51,
     "kind": "variable",
     "name": "queue",
     "memberof": "src/index.ts",
@@ -607,7 +618,7 @@
     "importPath": "dsa-gfg/src/index.ts",
     "importStyle": null,
     "description": null,
-    "lineNumber": 12,
+    "lineNumber": 9,
     "undocument": true,
     "type": {
       "types": [
@@ -617,7 +628,7 @@
     "ignore": true
   },
   {
-    "__docId__": 51,
+    "__docId__": 52,
     "kind": "file",
     "name": "src/linkedlist/count-nodes.ts",
     "content": "\nclass CountNodes {\n    // public getCount(Node head){\n\n    //     //Code here\n    // }\n}\n",
@@ -628,7 +639,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 52,
+    "__docId__": 53,
     "kind": "class",
     "name": "CountNodes",
     "memberof": "src/linkedlist/count-nodes.ts",
@@ -644,7 +655,7 @@
     "ignore": true
   },
   {
-    "__docId__": 53,
+    "__docId__": 54,
     "kind": "file",
     "name": "src/linkedlist/linked-list.spec.ts",
     "content": "import { LinkedList } from \"./linked-list\";\n\ntest(\"basic\", () => {\n  const list = new LinkedList();\n  list.add(1);\n  list.add(10);\n  list.add(5);\n  expect(Array.from(list.values())).toMatchObject([5, 10, 1]);\n//   expect(list.dequeue()).toBe(1);\n//   expect(Array.from(list.values())).toMatchObject([10, 5]);\n//   expect(list.dequeue()).toBe(10);\n//   expect(list.dequeue()).toBe(5);\n//   expect(list.dequeue()).toBe(undefined);\n//   expect(Array.from(list.values())).toMatchObject([]);\n//   list.add(5);\n//   expect(Array.from(list.values())).toMatchObject([5]);\n});\n",
@@ -655,7 +666,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 54,
+    "__docId__": 55,
     "kind": "file",
     "name": "src/linkedlist/linked-list.ts",
     "content": "// Insertion in a linked list\n\nclass LinkedListNode {\n    public data: number;\n    public next: LinkedListNode | null;\n\n    constructor(a: number) {\n        this.data = a;\n        this.next = null;\n    }\n}\n\n// tslint:disable-next-line: max-classes-per-file\nexport class LinkedList {\n    public head: LinkedListNode | null = null;\n    public tail: LinkedListNode | null = null;\n    // insert at beginning\n    public add(a: number) {\n        const temp = new LinkedListNode(a);\n        if (this.head == null) {\n            this.head = temp;\n            return;\n        }\n        temp.next = this.head;\n        this.head = temp;\n    }\n    // insert at end\n    public insertAtEnd(a: number) {\n        const temp = new LinkedListNode(a);\n        if (this.head == null ) {\n            this.head = temp;\n            this.tail = this.head;\n            return;\n        }\n        if (this.tail) {\n            this.tail.next = temp;\n        }\n        this.tail = temp;\n    }\n    public values() {\n        const val = [];\n        let temp = this.head;\n        while (temp != null) {\n            val.push(temp.data);\n            temp = temp.next;\n        }\n        return val;\n    }\n    // get count of nodes in a linked list\n    public count(): number {\n        let count = 0;\n        if (this.head === null) {\n            return count;\n        }\n        count = 1;\n        let temp: LinkedListNode = this.head;\n        while (temp.next != null) {\n            ++count;\n            temp = temp.next;\n        }\n        return count;\n    }\n    public getNth() {\n        \n    }\n}\n",
@@ -666,7 +677,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 55,
+    "__docId__": 56,
     "kind": "class",
     "name": "LinkedListNode",
     "memberof": "src/linkedlist/linked-list.ts",
@@ -682,7 +693,7 @@
     "ignore": true
   },
   {
-    "__docId__": 56,
+    "__docId__": 57,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/linkedlist/linked-list.ts~LinkedListNode",
@@ -696,7 +707,7 @@
     "undocument": true
   },
   {
-    "__docId__": 57,
+    "__docId__": 58,
     "kind": "member",
     "name": "data",
     "memberof": "src/linkedlist/linked-list.ts~LinkedListNode",
@@ -713,7 +724,7 @@
     }
   },
   {
-    "__docId__": 58,
+    "__docId__": 59,
     "kind": "member",
     "name": "next",
     "memberof": "src/linkedlist/linked-list.ts~LinkedListNode",
@@ -730,7 +741,7 @@
     }
   },
   {
-    "__docId__": 59,
+    "__docId__": 60,
     "kind": "class",
     "name": "LinkedList",
     "memberof": "src/linkedlist/linked-list.ts",
@@ -745,7 +756,7 @@
     "interface": false
   },
   {
-    "__docId__": 60,
+    "__docId__": 61,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -759,7 +770,7 @@
     "undocument": true
   },
   {
-    "__docId__": 61,
+    "__docId__": 62,
     "kind": "member",
     "name": "head",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -775,7 +786,7 @@
     }
   },
   {
-    "__docId__": 62,
+    "__docId__": 63,
     "kind": "member",
     "name": "tail",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -791,7 +802,7 @@
     }
   },
   {
-    "__docId__": 63,
+    "__docId__": 64,
     "kind": "method",
     "name": "add",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -817,7 +828,7 @@
     "return": null
   },
   {
-    "__docId__": 66,
+    "__docId__": 67,
     "kind": "method",
     "name": "insertAtEnd",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -843,7 +854,7 @@
     "return": null
   },
   {
-    "__docId__": 70,
+    "__docId__": 71,
     "kind": "method",
     "name": "values",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -862,7 +873,7 @@
     }
   },
   {
-    "__docId__": 71,
+    "__docId__": 72,
     "kind": "method",
     "name": "count",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -884,7 +895,7 @@
     "params": []
   },
   {
-    "__docId__": 72,
+    "__docId__": 73,
     "kind": "method",
     "name": "getNth",
     "memberof": "src/linkedlist/linked-list.ts~LinkedList",
@@ -899,10 +910,10 @@
     "return": null
   },
   {
-    "__docId__": 73,
+    "__docId__": 74,
     "kind": "file",
     "name": "src/queue/lru-cache.ts",
-    "content": "// The task is to design and implement methods of an LRU cache.\n// The class has two methods get() and set() which are defined as follows.\n// get(x)   : Returns the value of the key x if the key exists in the cache otherwise returns -1.\n// set(x,y) : inserts the value if the key x is not already present.\n// If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.\n// In the constructor of the class the size of the cache should be intitialized.\n",
+    "content": "// The task is to design and implement methods of an LRU cache.\n// The class has two methods get() and set() which are defined as follows.\n// get(x)   : Returns the value of the key x if the key exists in the cache otherwise returns -1.\n// set(x,y) : inserts the value if the key x is not already present.\n// If the cache reaches its capacity it should invalidate the least recently used item before inserting the new item.\n// In the constructor of the class the size of the cache should be intitialized.\nimport { Queue } from \"./queue\";\n\nexport class LRUCache<T> {\n    // This problem requires implementation of linkedhashmap.\n    constructor(size: number) {\n        // his.queue = new Queue(size);\n    }\n\n    public get(x: number) {\n        // empty\n    }\n\n    public set(x: T, y: T) {\n        // empty\n    }\n}",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/lru-cache.ts",
     "access": "public",
@@ -910,7 +921,98 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 74,
+    "__docId__": 75,
+    "kind": "class",
+    "name": "LRUCache",
+    "memberof": "src/queue/lru-cache.ts",
+    "static": true,
+    "longname": "src/queue/lru-cache.ts~LRUCache",
+    "access": "public",
+    "export": true,
+    "importPath": "dsa-gfg/src/queue/lru-cache.ts",
+    "importStyle": "{LRUCache}",
+    "description": "",
+    "lineNumber": 9,
+    "interface": false
+  },
+  {
+    "__docId__": 76,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/queue/lru-cache.ts~LRUCache",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/lru-cache.ts~LRUCache#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "get",
+    "memberof": "src/queue/lru-cache.ts~LRUCache",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/lru-cache.ts~LRUCache#get",
+    "access": "public",
+    "description": "",
+    "lineNumber": 15,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "set",
+    "memberof": "src/queue/lru-cache.ts~LRUCache",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/queue/lru-cache.ts~LRUCache#set",
+    "access": "public",
+    "description": "",
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "T"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "T"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 79,
     "kind": "file",
     "name": "src/queue/maximum-subarrays.ts",
     "content": "",
@@ -921,7 +1023,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 75,
+    "__docId__": 80,
     "kind": "file",
     "name": "src/queue/queue-node.spec.ts",
     "content": "import { QueueNodeImpl } from \"./queue-node\";\n\ntest(\"basic queue test using a linked list\", () => {\n  const queue = new QueueNodeImpl();\n  queue.add(1);\n  queue.poll();\n  expect(queue.isEmpty()).toBe(true);\n});\n\ntest(\"insert 5 elements and remove 1, length should be 4\", () => {\n  const queue = new QueueNodeImpl();\n  queue.add(1);\n  queue.add(2);\n  queue.add(3);\n  queue.add(4);\n  queue.add(5);\n  queue.poll();\n  expect(queue.size()).toEqual(4);\n  expect(queue.values()).toEqual([2, 3, 4, 5]);\n  queue.poll();\n  expect(queue.values()).toEqual([3, 4, 5]);\n  queue.add(6);\n  expect(queue.values()).toEqual([3, 4, 5, 6]);\n  queue.poll();\n  queue.poll();\n  expect(queue.values()).toEqual([5, 6]);\n});\n",
@@ -932,7 +1034,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 76,
+    "__docId__": 81,
     "kind": "file",
     "name": "src/queue/queue-node.ts",
     "content": "/*The structure of the node of the queue is*/\n\n/**\n * This is Queue Node\n */\nclass QueueNode<T> {\n    public data: T;\n    public next: QueueNode<T> | null;\n    constructor(a: T) {\n        this.data = a;\n        this.next = null;\n    }\n}\n/**\n * This class is implementation of Queue using linked list\n */\n// tslint:disable-next-line: max-classes-per-file\nexport class QueueNodeImpl<T> {\n    public front: QueueNode<T> | null = null;\n    public rear: QueueNode<T> | null = null;\n\n    /**\n     * This function should add an item at rear\n     * @param a\n     */\n    public add(a: T) {\n        // Your code here\n        const temp = new QueueNode(a);\n        if (this.front == null) {\n            this.front = temp;\n            this.rear = this.front;\n        } else {\n            if (this.rear) {\n                this.rear.next = temp;\n            }\n            this.rear = temp;\n        }\n    }\n\n    /**\n     * This function should remove front item from queue and\n     * return the removed item\n     * @return {T} item removed\n     */\n    public poll(): T | undefined {\n        if (this.front == null) {\n            return undefined;\n        }\n        if (this.rear === this.front) {\n            const data = this.front.data;\n            this.front = this.rear = null;\n            return data;\n        }\n        const temp = this.front;\n        this.front = temp.next;\n        return temp.data;\n    }\n\n    /**\n     * The method to check if queue is empty or not\n     * @return {boolean} true or false\n     */\n    public isEmpty(): boolean {\n        return this.front === this.rear ? true : false;\n    }\n\n    /**\n     * The method to return size of the queue\n     * @return {boolean} true or false\n     */\n    public size(): number {\n        if (this.front === null) {\n            return 0;\n        }\n        let size = 1;\n        let temp = this.front;\n        while (temp.next != null) {\n            size++;\n            temp = temp.next;\n        }\n        return size;\n    }\n\n    /**\n     * This function return the values of the queue\n     * @return {T[]} array of values\n     */\n    public values(): T[] {\n        const tempArr: T[] = [];\n        if (this.front === null) {\n            return [];\n        }\n        let temp = this.front;\n        tempArr.push(temp.data);\n        while (temp.next != null) {\n            temp = temp.next;\n            tempArr.push(temp.data);\n        }\n        return tempArr;\n    }\n}\n",
@@ -943,7 +1045,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 77,
+    "__docId__": 82,
     "kind": "class",
     "name": "QueueNode",
     "memberof": "src/queue/queue-node.ts",
@@ -959,7 +1061,7 @@
     "ignore": true
   },
   {
-    "__docId__": 78,
+    "__docId__": 83,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/queue/queue-node.ts~QueueNode",
@@ -973,7 +1075,7 @@
     "undocument": true
   },
   {
-    "__docId__": 79,
+    "__docId__": 84,
     "kind": "member",
     "name": "data",
     "memberof": "src/queue/queue-node.ts~QueueNode",
@@ -990,7 +1092,7 @@
     }
   },
   {
-    "__docId__": 80,
+    "__docId__": 85,
     "kind": "member",
     "name": "next",
     "memberof": "src/queue/queue-node.ts~QueueNode",
@@ -1007,7 +1109,7 @@
     }
   },
   {
-    "__docId__": 81,
+    "__docId__": 86,
     "kind": "class",
     "name": "QueueNodeImpl",
     "memberof": "src/queue/queue-node.ts",
@@ -1022,7 +1124,7 @@
     "interface": false
   },
   {
-    "__docId__": 82,
+    "__docId__": 87,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1036,7 +1138,7 @@
     "undocument": true
   },
   {
-    "__docId__": 83,
+    "__docId__": 88,
     "kind": "member",
     "name": "front",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1052,7 +1154,7 @@
     }
   },
   {
-    "__docId__": 84,
+    "__docId__": 89,
     "kind": "member",
     "name": "rear",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1068,7 +1170,7 @@
     }
   },
   {
-    "__docId__": 85,
+    "__docId__": 90,
     "kind": "method",
     "name": "add",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1094,7 +1196,7 @@
     "return": null
   },
   {
-    "__docId__": 89,
+    "__docId__": 94,
     "kind": "method",
     "name": "poll",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1113,7 +1215,7 @@
     }
   },
   {
-    "__docId__": 92,
+    "__docId__": 97,
     "kind": "method",
     "name": "isEmpty",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1135,7 +1237,7 @@
     "params": []
   },
   {
-    "__docId__": 93,
+    "__docId__": 98,
     "kind": "method",
     "name": "size",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1157,7 +1259,7 @@
     "params": []
   },
   {
-    "__docId__": 94,
+    "__docId__": 99,
     "kind": "method",
     "name": "values",
     "memberof": "src/queue/queue-node.ts~QueueNodeImpl",
@@ -1176,10 +1278,10 @@
     }
   },
   {
-    "__docId__": 95,
+    "__docId__": 100,
     "kind": "file",
     "name": "src/queue/queue.spec.ts",
-    "content": "import { Queue } from \"./queue\";\n\ntest(\"basic queue test using a array\", () => {\n  const queue = new Queue();\n  queue.add(1);\n  queue.poll();\n  expect(queue.isEmpty()).toBe(true);\n});\n\ntest(\"insert 5 elements and remove 1, length should be 4\", () => {\n  const queue = new Queue();\n  queue.add(1);\n  queue.add(2);\n  queue.add(3);\n  queue.add(4);\n  queue.add(5);\n  queue.poll();\n  expect(queue.size()).toEqual(4);\n  expect(queue.values()).toEqual([2, 3, 4, 5]);\n  queue.poll();\n  expect(queue.values()).toEqual([3, 4, 5]);\n  queue.add(6);\n  expect(queue.values()).toEqual([3, 4, 5, 6]);\n  queue.poll();\n  queue.poll();\n  expect(queue.values()).toEqual([5, 6]);\n  queue.add(7);\n  queue.add(8);\n  // reverse a queue\n  expect(queue.reverse()).toEqual([8, 7, 6, 5]);\n});\n",
+    "content": "import { Queue } from \"./queue\";\n\ntest(\"basic queue test using a array\", () => {\n  const queue = new Queue();\n  queue.add(1);\n  queue.poll();\n  expect(queue.isEmpty()).toBe(true);\n});\n\ntest(\"insert 5 elements and remove 1, length should be 4\", () => {\n  const queue = new Queue(10);\n  queue.add(1);\n  queue.add(2);\n  queue.add(3);\n  queue.add(4);\n  queue.add(5);\n  queue.poll();\n  expect(queue.size()).toEqual(4);\n  expect(queue.values()).toEqual([2, 3, 4, 5]);\n  queue.poll();\n  expect(queue.values()).toEqual([3, 4, 5]);\n  queue.add(6);\n  expect(queue.values()).toEqual([3, 4, 5, 6]);\n  queue.poll();\n  queue.poll();\n  expect(queue.values()).toEqual([5, 6]);\n  queue.add(7);\n  queue.add(8);\n  // reverse a queue\n  expect(queue.reverse()).toEqual([8, 7, 6, 5]);\n});\n",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/queue.spec.ts",
     "access": "public",
@@ -1187,10 +1289,10 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 96,
+    "__docId__": 101,
     "kind": "file",
     "name": "src/queue/queue.ts",
-    "content": "import { Stack } from \"../stack/stack\";\n\n// Implement a Queue using Array. Your task is only to complete the functions push and pop.\n/* This is Queue class using array */\nexport class Queue<T> {\n    public front: number = 0;\n    public rear: number = 0;\n    public arr: T[] = [];\n\n    constructor() {\n        this.front = 0;\n        this.rear = 0;\n    }\n\n    /** The method add to push element into the queue\n     * @param {number} a - this is a value.\n     * @return {void}\n     */\n    public add(a: T): void {\n        this.arr[this.rear++] = a;\n    }\n\n    /** The method pop which return the element poped out of the queue\n     * @return {T} element which is removed\n     */\n    /* */\n    public poll(): T | undefined {\n        // Your code\n        if (this.front === this.rear) {\n            return;\n        }\n        const elem = this.arr[this.front];\n        delete this.arr[this.front];\n        this.front++;\n        return elem;\n    }\n\n    /**\n     * The method to check if queue is empty or not\n     * @return {boolean} true or false\n     */\n    public isEmpty(): boolean {\n        return this.rear - this.front === 0 ? true : false;\n    }\n\n    /**\n     * The method to return size of the queue\n     * @return {boolean} true or false\n     */\n    public size(): number {\n        return this.rear - this.front;\n    }\n\n    /**\n     * This function return the values of the queue\n     * @return {T[]} array of values\n     */\n    public values(): T[] {\n        const tempArr: T[] = [];\n        for (let i = this.front; i < this.rear; i++) {\n            tempArr.push(this.arr[i]);\n        }\n        return tempArr;\n    }\n\n    /**\n     * This function Reverses a Queue\n     * @returns {T[]} array of values\n     */\n    public reverse(): T[] {\n        const stack = new Stack<T>();\n        this.values().forEach( (val) => {\n            stack.push(val);\n        });\n        return stack.values();\n    }\n}\n",
+    "content": "import { Stack } from \"../stack/stack\";\n\n// Implement a Queue using Array. Your task is only to complete the functions push and pop.\n/* This is Queue class using array */\nexport class Queue<T> {\n    public front: number = 0;\n    public rear: number = 0;\n    public arr: T[];\n\n    constructor(size: number = 10) {\n        this.front = 0;\n        this.rear = 0;\n        this.arr = new Array(size);\n    }\n\n    /** The method add to push element into the queue\n     * @param {number} a - this is a value.\n     * @return {void}\n     */\n    public add(a: T): void {\n        this.arr[this.rear++] = a;\n    }\n\n    /** The method pop which return the element poped out of the queue\n     * @return {T} element which is removed\n     */\n    /* */\n    public poll(): T | undefined {\n        // Your code\n        if (this.front === this.rear) {\n            return;\n        }\n        const elem = this.arr[this.front];\n        delete this.arr[this.front];\n        this.front++;\n        return elem;\n    }\n\n    /**\n     * The method to check if queue is empty or not\n     * @return {boolean} true or false\n     */\n    public isEmpty(): boolean {\n        return this.rear - this.front === 0 ? true : false;\n    }\n\n    /**\n     * The method to return size of the queue\n     * @return {boolean} true or false\n     */\n    public size(): number {\n        return this.rear - this.front;\n    }\n\n    /**\n     * This function return the values of the queue\n     * @return {T[]} array of values\n     */\n    public values(): T[] {\n        const tempArr: T[] = [];\n        for (let i = this.front; i < this.rear; i++) {\n            tempArr.push(this.arr[i]);\n        }\n        return tempArr;\n    }\n\n    /**\n     * This function Reverses a Queue\n     * @returns {T[]} array of values\n     */\n    public reverse(): T[] {\n        const stack = new Stack<T>();\n        this.values().forEach( (val) => {\n            stack.push(val);\n        });\n        return stack.values();\n    }\n}\n",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/queue.ts",
     "access": "public",
@@ -1198,7 +1300,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 97,
+    "__docId__": 102,
     "kind": "class",
     "name": "Queue",
     "memberof": "src/queue/queue.ts",
@@ -1213,7 +1315,7 @@
     "interface": false
   },
   {
-    "__docId__": 98,
+    "__docId__": 103,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1227,7 +1329,7 @@
     "undocument": true
   },
   {
-    "__docId__": 99,
+    "__docId__": 104,
     "kind": "member",
     "name": "front",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1246,7 +1348,7 @@
     }
   },
   {
-    "__docId__": 100,
+    "__docId__": 105,
     "kind": "member",
     "name": "rear",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1265,23 +1367,24 @@
     }
   },
   {
-    "__docId__": 101,
+    "__docId__": 108,
     "kind": "member",
     "name": "arr",
     "memberof": "src/queue/queue.ts~Queue",
     "static": false,
     "longname": "src/queue/queue.ts~Queue#arr",
     "access": "public",
-    "description": "",
-    "lineNumber": 8,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
     "type": {
       "types": [
-        "*[]"
+        "*"
       ]
     }
   },
   {
-    "__docId__": 104,
+    "__docId__": 109,
     "kind": "method",
     "name": "add",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1291,7 +1394,7 @@
     "longname": "src/queue/queue.ts~Queue#add",
     "access": "public",
     "description": "The method add to push element into the queue",
-    "lineNumber": 19,
+    "lineNumber": 20,
     "params": [
       {
         "nullable": null,
@@ -1307,7 +1410,7 @@
     "return": null
   },
   {
-    "__docId__": 105,
+    "__docId__": 110,
     "kind": "method",
     "name": "poll",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1317,7 +1420,7 @@
     "longname": "src/queue/queue.ts~Queue#poll",
     "access": "public",
     "description": "The method pop which return the element poped out of the queue",
-    "lineNumber": 27,
+    "lineNumber": 28,
     "params": [],
     "return": {
       "types": [
@@ -1326,7 +1429,7 @@
     }
   },
   {
-    "__docId__": 106,
+    "__docId__": 111,
     "kind": "method",
     "name": "isEmpty",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1336,7 +1439,7 @@
     "longname": "src/queue/queue.ts~Queue#isEmpty",
     "access": "public",
     "description": "The method to check if queue is empty or not",
-    "lineNumber": 42,
+    "lineNumber": 43,
     "return": {
       "nullable": null,
       "types": [
@@ -1348,7 +1451,7 @@
     "params": []
   },
   {
-    "__docId__": 107,
+    "__docId__": 112,
     "kind": "method",
     "name": "size",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1358,7 +1461,7 @@
     "longname": "src/queue/queue.ts~Queue#size",
     "access": "public",
     "description": "The method to return size of the queue",
-    "lineNumber": 50,
+    "lineNumber": 51,
     "return": {
       "nullable": null,
       "types": [
@@ -1370,7 +1473,7 @@
     "params": []
   },
   {
-    "__docId__": 108,
+    "__docId__": 113,
     "kind": "method",
     "name": "values",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1380,7 +1483,7 @@
     "longname": "src/queue/queue.ts~Queue#values",
     "access": "public",
     "description": "This function return the values of the queue",
-    "lineNumber": 58,
+    "lineNumber": 59,
     "params": [],
     "return": {
       "types": [
@@ -1389,7 +1492,7 @@
     }
   },
   {
-    "__docId__": 109,
+    "__docId__": 114,
     "kind": "method",
     "name": "reverse",
     "memberof": "src/queue/queue.ts~Queue",
@@ -1399,7 +1502,7 @@
     "longname": "src/queue/queue.ts~Queue#reverse",
     "access": "public",
     "description": "This function Reverses a Queue",
-    "lineNumber": 70,
+    "lineNumber": 71,
     "params": [],
     "return": {
       "types": [
@@ -1408,18 +1511,7 @@
     }
   },
   {
-    "__docId__": 110,
-    "kind": "file",
-    "name": "src/queue/reverse-k-elements.ts",
-    "content": "",
-    "static": true,
-    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/queue/reverse-k-elements.ts",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 111,
+    "__docId__": 115,
     "kind": "file",
     "name": "src/stack/remove-consecutive-duplicates.ts",
     "content": "// Stacks can be used to remove duplicate characters from a string that are stacked next to each other.\n// For example, we take the string aabbccccc and convert it into abc.\n// We can push the first character into a stack and skip if the top of the stack is equal to current character.\n\n// Input:\n// 2\n// aaaaaabaabccccccc\n// abbccbcd\n\n// Output:\n// ababc\n// abcbcd\n",
@@ -1430,7 +1522,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 112,
+    "__docId__": 116,
     "kind": "file",
     "name": "src/stack/stack-node.ts",
     "content": "// Implement a Stack using Linked List .\nclass StackNode {\n    public data: number;\n    public next: StackNode | null;\n    constructor(a: number) {\n        this.data = a;\n        this.next = null;\n    }\n}\n\n// tslint:disable-next-line: max-classes-per-file\nclass MyStack {\n    public top: StackNode | null = null;\n    public push(a: number) {\n        // Add your code here\n        if (this.top == null) {\n            const temp = new StackNode(a);\n            this.top = temp;\n        } else {\n            const temp = new StackNode(a);\n            temp.next = this.top;\n            this.top = temp;\n        }\n    }\n    public pop() {\n        if ( this.top == null) {\n            return -1;\n        }\n        const temp = this.top.next;\n        const popped: StackNode = this.top;\n        this.top = temp;\n        return popped.data;\n    }\n}\n",
@@ -1441,7 +1533,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 113,
+    "__docId__": 117,
     "kind": "class",
     "name": "StackNode",
     "memberof": "src/stack/stack-node.ts",
@@ -1457,7 +1549,7 @@
     "ignore": true
   },
   {
-    "__docId__": 114,
+    "__docId__": 118,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/stack/stack-node.ts~StackNode",
@@ -1471,7 +1563,7 @@
     "undocument": true
   },
   {
-    "__docId__": 115,
+    "__docId__": 119,
     "kind": "member",
     "name": "data",
     "memberof": "src/stack/stack-node.ts~StackNode",
@@ -1488,7 +1580,7 @@
     }
   },
   {
-    "__docId__": 116,
+    "__docId__": 120,
     "kind": "member",
     "name": "next",
     "memberof": "src/stack/stack-node.ts~StackNode",
@@ -1505,7 +1597,7 @@
     }
   },
   {
-    "__docId__": 117,
+    "__docId__": 121,
     "kind": "class",
     "name": "MyStack",
     "memberof": "src/stack/stack-node.ts",
@@ -1521,7 +1613,7 @@
     "ignore": true
   },
   {
-    "__docId__": 118,
+    "__docId__": 122,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/stack/stack-node.ts~MyStack",
@@ -1535,7 +1627,7 @@
     "undocument": true
   },
   {
-    "__docId__": 119,
+    "__docId__": 123,
     "kind": "member",
     "name": "top",
     "memberof": "src/stack/stack-node.ts~MyStack",
@@ -1551,7 +1643,7 @@
     }
   },
   {
-    "__docId__": 120,
+    "__docId__": 124,
     "kind": "method",
     "name": "push",
     "memberof": "src/stack/stack-node.ts~MyStack",
@@ -1577,7 +1669,7 @@
     "return": null
   },
   {
-    "__docId__": 123,
+    "__docId__": 127,
     "kind": "method",
     "name": "pop",
     "memberof": "src/stack/stack-node.ts~MyStack",
@@ -1596,7 +1688,7 @@
     }
   },
   {
-    "__docId__": 125,
+    "__docId__": 129,
     "kind": "file",
     "name": "src/stack/stack.spec.ts",
     "content": "import { Stack } from \"./stack\";\n\ntest(\"basic stack test using a array\", () => {\n  const stack = new Stack();\n  stack.push(1);\n  stack.pop();\n  expect(stack.isEmpty()).toBe(true);\n});\n\ntest(\"insert 5 elements and remove 1, length should be 4\", () => {\n  const stack = new Stack();\n  stack.push(1);\n  stack.push(2);\n  stack.push(3);\n  stack.push(4);\n  stack.push(5);\n  stack.pop();\n  expect(stack.size()).toEqual(4);\n  expect(stack.values()).toEqual([4, 3, 2, 1]);\n});\n",
@@ -1607,7 +1699,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 126,
+    "__docId__": 130,
     "kind": "file",
     "name": "src/stack/stack.ts",
     "content": "// Implement a Stack using Array. Your task is to complete the functions below.\n// You are required to complete two methods push which take one argument an integer 'x' to be pushed into the stack\n// and pop which returns a integer poped out from the stack.\n/**\n * this is Stack Class.\n */\nexport class Stack<T> {\n    public top: number;\n    public arr: T[] = [];\n    constructor() {\n        this.top = -1;\n    }\n\n    /** The method push to push element into the stack\n     * @param {number} a - this is a value.\n     * @return {void}\n     */\n    public push(a: T): void {\n        if (!a) {\n            // tslint:disable-next-line: no-console\n            console.debug(\"Please push a proper value\");\n            return;\n        }\n        ++this.top;\n        this.arr[this.top] = a;\n    }\n\n    /**\n     * The method pop which will return the top element from the stack\n     * @return {T} popped element\n     */\n    public pop(): T | undefined {\n        // Your code here\n        if ( this.top === -1) {\n            return undefined;\n        }\n        const topElement = this.arr[this.top];\n        this.arr = this.arr.filter( (elem, index) => {\n            return index !== this.top;\n        });\n        this.top = this.top - 1;\n        return topElement;\n    }\n\n    /**\n     * This method will return if stack is empty or not\n     * @return {boolean} true or false\n     */\n    public isEmpty(): boolean {\n        return this.top < 0;\n    }\n\n    /**\n     * This will return the size of the stack\n     * @return {number} size\n     */\n    public size(): number {\n        const size = this.top + 1;\n        return size;\n    }\n\n    /**\n     * This function returns the values in a stack\n     * @returns {T[]}\n     */\n    public values(): T[] {\n        const tempArr: T[] = [];\n        for (let i = this.top; i >= 0; i--) {\n            tempArr.push(this.arr[i]);\n        }\n        return tempArr;\n    }\n}\n",
@@ -1618,7 +1710,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 127,
+    "__docId__": 131,
     "kind": "class",
     "name": "Stack",
     "memberof": "src/stack/stack.ts",
@@ -1633,7 +1725,7 @@
     "interface": false
   },
   {
-    "__docId__": 128,
+    "__docId__": 132,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1647,7 +1739,7 @@
     "undocument": true
   },
   {
-    "__docId__": 129,
+    "__docId__": 133,
     "kind": "member",
     "name": "arr",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1663,7 +1755,7 @@
     }
   },
   {
-    "__docId__": 130,
+    "__docId__": 134,
     "kind": "member",
     "name": "top",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1680,7 +1772,7 @@
     }
   },
   {
-    "__docId__": 131,
+    "__docId__": 135,
     "kind": "method",
     "name": "push",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1706,7 +1798,7 @@
     "return": null
   },
   {
-    "__docId__": 132,
+    "__docId__": 136,
     "kind": "method",
     "name": "pop",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1725,7 +1817,7 @@
     }
   },
   {
-    "__docId__": 135,
+    "__docId__": 139,
     "kind": "method",
     "name": "isEmpty",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1747,7 +1839,7 @@
     "params": []
   },
   {
-    "__docId__": 136,
+    "__docId__": 140,
     "kind": "method",
     "name": "size",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1769,7 +1861,7 @@
     "params": []
   },
   {
-    "__docId__": 137,
+    "__docId__": 141,
     "kind": "method",
     "name": "values",
     "memberof": "src/stack/stack.ts~Stack",
@@ -1788,7 +1880,7 @@
     }
   },
   {
-    "__docId__": 138,
+    "__docId__": 142,
     "kind": "file",
     "name": "src/stack/two-stacks.ts",
     "content": "// Your task is to implement  2 stacks in one array efficiently .\nclass TwoStack {\n    public size: number;\n    public top1: number;\n    public top2: number;\n    public arr: number[] = [];\n    constructor() {\n        this.size = 100;\n        this.top1 = -1;\n        this.top2 = this.size;\n    }\n}\n\n// tslint:disable-next-line: max-classes-per-file\nexport class Stacks {\n    // sq is the object of class TwoStack\n    /* The method push to push element into the stack 2 */\n    public push1(x: number, sq: TwoStack) {\n        sq.top1 = sq.top1 + 1;\n        sq.arr[sq.top1] = x;\n    }\n    /* The method push to push element into the stack 2*/\n    public push2(x: number, sq: TwoStack) {\n        sq.top2 = sq.top2 - 1;\n        sq.arr[sq.top2] = x;\n    }\n    /* The method pop to pop element from the stack 1 */\n    // Return the popped element\n    public pop1(sq: TwoStack) {\n        if (sq.top1 === -1) {\n            return -1;\n        }\n        const topElement = sq.arr[sq.top1];\n        sq.top1--;\n        return topElement;\n    }\n    /* The method pop to pop element from the stack 2 */\n    // Return the popper element\n    public pop2(sq: TwoStack) {\n        if (sq.top2 === 100) {\n            return 100;\n        }\n        const topElement = sq.arr[sq.top2];\n        sq.top2++;\n        return topElement;\n    }\n}\n",
@@ -1799,7 +1891,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 139,
+    "__docId__": 143,
     "kind": "class",
     "name": "TwoStack",
     "memberof": "src/stack/two-stacks.ts",
@@ -1815,7 +1907,7 @@
     "ignore": true
   },
   {
-    "__docId__": 140,
+    "__docId__": 144,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/stack/two-stacks.ts~TwoStack",
@@ -1829,7 +1921,7 @@
     "undocument": true
   },
   {
-    "__docId__": 141,
+    "__docId__": 145,
     "kind": "member",
     "name": "arr",
     "memberof": "src/stack/two-stacks.ts~TwoStack",
@@ -1845,7 +1937,7 @@
     }
   },
   {
-    "__docId__": 142,
+    "__docId__": 146,
     "kind": "member",
     "name": "size",
     "memberof": "src/stack/two-stacks.ts~TwoStack",
@@ -1862,7 +1954,7 @@
     }
   },
   {
-    "__docId__": 143,
+    "__docId__": 147,
     "kind": "member",
     "name": "top1",
     "memberof": "src/stack/two-stacks.ts~TwoStack",
@@ -1879,7 +1971,7 @@
     }
   },
   {
-    "__docId__": 144,
+    "__docId__": 148,
     "kind": "member",
     "name": "top2",
     "memberof": "src/stack/two-stacks.ts~TwoStack",
@@ -1896,7 +1988,7 @@
     }
   },
   {
-    "__docId__": 145,
+    "__docId__": 149,
     "kind": "class",
     "name": "Stacks",
     "memberof": "src/stack/two-stacks.ts",
@@ -1911,7 +2003,7 @@
     "interface": false
   },
   {
-    "__docId__": 146,
+    "__docId__": 150,
     "kind": "method",
     "name": "push1",
     "memberof": "src/stack/two-stacks.ts~Stacks",
@@ -1947,7 +2039,7 @@
     "return": null
   },
   {
-    "__docId__": 147,
+    "__docId__": 151,
     "kind": "method",
     "name": "push2",
     "memberof": "src/stack/two-stacks.ts~Stacks",
@@ -1983,7 +2075,7 @@
     "return": null
   },
   {
-    "__docId__": 148,
+    "__docId__": 152,
     "kind": "method",
     "name": "pop1",
     "memberof": "src/stack/two-stacks.ts~Stacks",
@@ -2013,7 +2105,7 @@
     }
   },
   {
-    "__docId__": 149,
+    "__docId__": 153,
     "kind": "method",
     "name": "pop2",
     "memberof": "src/stack/two-stacks.ts~Stacks",
@@ -2043,7 +2135,7 @@
     }
   },
   {
-    "__docId__": 150,
+    "__docId__": 154,
     "kind": "file",
     "name": "src/star/star.ts",
     "content": "class Star {\n    //      *\n    //     * *\n    //    * * *\n    // print above pattern given the level\n    public printStar(num: number) {\n        for (let i = 1; i <= num; i++) {\n            for (let k = 1; k <= (num - i); k++) {\n                document.write(\"&nbsp;\");\n            }\n            for (let j = 1; j <= i ; j++) {\n                document.write(\"*\");\n            }\n            document.write(\"<br/>\");\n        }\n    }\n    // 4 3 2 1\n    //  3 2 1\n    //   2 1\n    //    1\n    // printNumbers(4);\n    public printNumbers(num: number) {\n        for (let i = num; i >= 1; i--) {\n            for (let k = 1; k <= (num - i) ; k++) {\n                document.write(\"&nbsp;\");\n            }\n            for (let j = i; j >= 1 ; j--) {\n                document.write(j + \"\");\n            }\n            document.write(\"<br/>\");\n        }\n    }\n}\n\n// document.write('<br/>');\n",
@@ -2054,7 +2146,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 151,
+    "__docId__": 155,
     "kind": "class",
     "name": "Star",
     "memberof": "src/star/star.ts",
@@ -2070,7 +2162,7 @@
     "ignore": true
   },
   {
-    "__docId__": 152,
+    "__docId__": 156,
     "kind": "method",
     "name": "printStar",
     "memberof": "src/star/star.ts~Star",
@@ -2096,7 +2188,7 @@
     "return": null
   },
   {
-    "__docId__": 153,
+    "__docId__": 157,
     "kind": "method",
     "name": "printNumbers",
     "memberof": "src/star/star.ts~Star",
@@ -2122,10 +2214,10 @@
     "return": null
   },
   {
-    "__docId__": 154,
+    "__docId__": 158,
     "kind": "file",
     "name": "src/trees/level-order-spiral.ts",
-    "content": "// package trees;\n\n// import java.util.LinkedList;\n// import java.util.Queue;\n\n// Complete the function to print spiral order traversal of a tree. \n\n// Testcase1: The tree is\n//         1\n//      /      \\\n//    3       2\n// So, the spiral level order would be 1 3 2\n// Testcase2: The tree is\n//                            10\n//                         /        \\\n//                      20         30\n//                   /       \\\n//                40       60\n//                /         \\\n//             50   55    70  80 \n// So, the spiral level order would be 10 20 30 60 40\n\n// A Binary Tree node\n// class Node\n// {\n//     int data;\n//     Node left, right;\n//     Node(int item)\n//     {\n//         data = item;\n//         left = right = null;\n//     }\n// }\n\n// class Spiral\n// {\n//     void printSpiral(Node node) {\n//         Queue<Node> queue = new LinkedList<Node>(); \n//         queue.add(node);\n//         boolean alternate = false;\n//         while(!queue.isEmpty()) {\n//             Node tempNode = queue.poll();\n//             Node left = tempNode.left;\n//             Node right = tempNode.right;\n//             System.out.print(tempNode.data + \" \");\n            \n//             if (alternate) {\n//                 if(right != null) {\n//                     queue.add(right);    \n//                 }\n//                 if(left != null) {\n//                     queue.add(left);    \n//                 }\n//             } else {\n//                 if(left != null) {\n//                     queue.add(left);    \n//                 }\n//                 if(right != null) {\n//                     queue.add(right);    \n//                 }\n//             }\n//             alternate = !alternate;\n//         }\n//     }\n// }\n",
+    "content": "\n\n\nimport { Queue } from \"../queue/queue\";\nimport TreeNode from \"./tree-node\";\nexport class Spiral<T> {\n    public printSpiral(node: TreeNode<T>) {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (!queue.isEmpty()) {\n            const tempNode = queue.poll();\n            if (!tempNode) {\n                continue;\n            }\n            const size = queue.size();\n            for (let i = 0; i < size; i++) {\n                console.log(tempNode.data + \" \");\n                const left = tempNode.left;\n                const right = tempNode.right;\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n            }\n        }\n    }\n}\n",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/level-order-spiral.ts",
     "access": "public",
@@ -2133,65 +2225,32 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 155,
-    "kind": "file",
-    "name": "src/trees/level-order-traversal-line.ts",
-    "content": "// package trees;\n\n// import java.util.LinkedList;\n// import java.util.Queue;\n\n// Given a Binary Tree, your task is to print its level order traversal such that each level is separated by $.\n// For the below tree the output will be 1 $ 2 3 $ 4 5 6 7 $ 8 $.\n\n//           1\n//        /     \\\n//      2        3\n//    /    \\     /   \\\n//   4     5   6    7\n//     \\\n//      8\n\n\n// class Node {\n//     int data;\n//     Node left, right;\n//     Node(int item)\n//     {\n//         data = item;\n//         left = right = null;\n//     }\n// }\n\n// class Level_Order_Traverse_Line\n// {\n//     static void levelOrder(Node node) \n//     {\n//         Queue<Node> queue = new LinkedList<Node>();\n//         queue.add(node);\n//         while(true) {\n//             int size = queue.size();\n//             if (size == 0) {\n//                break; \n//             }\n//             while(size > 0) {\n//                 Node tempNode = queue.poll();\n//                 System.out.print(tempNode.data + \" \");\n//                 Node left = tempNode.left;\n//                 Node right = tempNode.right;\n//                 if(left != null) {\n//                     queue.add(left);\n//                 }\n//                 if(right != null) {\n//                     queue.add(right);\n//                 }\n//                 size--;\n//             }\n//             System.out.print(\"$ \");\n//         }\n        \n//     }\n// }",
-    "static": true,
-    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/level-order-traversal-line.ts",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 156,
-    "kind": "file",
-    "name": "src/trees/level-order-traversal.spec.ts",
-    "content": "import { LevelOrderTraversal } from \"./level-order-traversal\";\nimport TreeNode from \"./tree-node\";\nlet levelOrderTraversal: LevelOrderTraversal;\n\nbeforeEach( () => {\n    levelOrderTraversal = new LevelOrderTraversal();\n});\n\ntest(\"basic test for level order traversal\", () => {\n  const tree = new TreeNode<number>(1);\n  tree.left = new TreeNode<number>(3);\n  tree.right = new TreeNode<number>(2);\n  let outputData = \"\";\n  const storeLog = (inputs: any) => (outputData += inputs);\n  // tslint:disable-next-line: no-console\n  console.log = jest.fn(storeLog);\n  // levelOrderTraversal.levelOrder(tree);\n  expect(outputData).toBe(\"\");\n});\n\ntest(\"level order traversal for more elements\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n    tree.left.left = new TreeNode<number>(40);\n    tree.left.right = new TreeNode<number>(60);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    // tslint:disable-next-line: no-console\n    console.log = jest.fn(storeLog);\n    // levelOrderTraversal.levelOrder(tree);\n    expect(outputData).toBe(\"\");\n  });\n",
-    "static": true,
-    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/level-order-traversal.spec.ts",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 157,
-    "kind": "file",
-    "name": "src/trees/level-order-traversal.ts",
-    "content": "// You are given a tree and you need to do the level order traversal on this tree.\n// Level order traversal of a tree is breadth-first traversal for the tree.\n\n// Testcase1: The tree is\n//         1\n//      /      \\\n//    3       2\n// So, the level order would be 1 3 2\n// Testcase2: The tree is\n//                            10\n//                         /        \\\n//                      20         30\n//                   /       \\\n//                40       60\n// So, the level order would be 10 20 30 40 60\n\nimport { Queue } from \"../queue/queue\";\nimport TreeNode from \"./tree-node\";\n\n// tslint:disable-next-line: max-classes-per-file\nexport class LevelOrderTraversal {\n\n    public levelOrder(node: TreeNode<number>) {\n        // tslint:disable-next-line: no-bitwise\n        // tslint:disable-next-line: no-unused-expression\n        const queue = new Queue<TreeNode<number>>();\n        queue.add(node);\n        while (!queue.isEmpty()) {\n            const tempNode: TreeNode<number> | undefined = queue.poll();\n            if (tempNode) {\n                const left = tempNode.left;\n                const right = tempNode.right;\n                // tslint:disable-next-line: no-console\n                console.log(tempNode.data + \" \");\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n            }\n        }\n    }\n}",
-    "static": true,
-    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/level-order-traversal.ts",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 158,
+    "__docId__": 159,
     "kind": "class",
-    "name": "LevelOrderTraversal",
-    "memberof": "src/trees/level-order-traversal.ts",
+    "name": "Spiral",
+    "memberof": "src/trees/level-order-spiral.ts",
     "static": true,
-    "longname": "src/trees/level-order-traversal.ts~LevelOrderTraversal",
+    "longname": "src/trees/level-order-spiral.ts~Spiral",
     "access": "public",
     "export": true,
-    "importPath": "dsa-gfg/src/trees/level-order-traversal.ts",
-    "importStyle": "{LevelOrderTraversal}",
+    "importPath": "dsa-gfg/src/trees/level-order-spiral.ts",
+    "importStyle": "{Spiral}",
     "description": "",
-    "lineNumber": 21,
+    "lineNumber": 6,
     "interface": false
   },
   {
-    "__docId__": 159,
+    "__docId__": 160,
     "kind": "method",
-    "name": "levelOrder",
-    "memberof": "src/trees/level-order-traversal.ts~LevelOrderTraversal",
+    "name": "printSpiral",
+    "memberof": "src/trees/level-order-spiral.ts~Spiral",
     "generator": false,
     "async": false,
     "static": false,
-    "longname": "src/trees/level-order-traversal.ts~LevelOrderTraversal#levelOrder",
+    "longname": "src/trees/level-order-spiral.ts~Spiral#printSpiral",
     "access": "public",
     "description": "",
-    "lineNumber": 23,
+    "lineNumber": 7,
     "params": [
       {
         "nullable": null,
@@ -2207,10 +2266,10 @@
     "return": null
   },
   {
-    "__docId__": 160,
+    "__docId__": 161,
     "kind": "file",
     "name": "src/trees/tree-node.ts",
-    "content": "export default class TreeNode<T> {\n    public data: T;\n    public left: TreeNode<T> | null;\n    public right: TreeNode<T> | null;\n    constructor(item: T) {\n        this.data = item;\n        this.left = this.right = null;\n    }\n}\n",
+    "content": "export default class TreeNode<T> {\n    public data: T;\n    public left: TreeNode<T> | null;\n    public right: TreeNode<T> | null;\n    constructor(item: T) {\n        this.data = item;\n        this.left = this.right = null;\n    }\n\n}\n",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/tree-node.ts",
     "access": "public",
@@ -2218,7 +2277,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 161,
+    "__docId__": 162,
     "kind": "class",
     "name": "TreeNode",
     "memberof": "src/trees/tree-node.ts",
@@ -2233,7 +2292,7 @@
     "interface": false
   },
   {
-    "__docId__": 162,
+    "__docId__": 163,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/trees/tree-node.ts~TreeNode",
@@ -2247,7 +2306,7 @@
     "undocument": true
   },
   {
-    "__docId__": 163,
+    "__docId__": 164,
     "kind": "member",
     "name": "data",
     "memberof": "src/trees/tree-node.ts~TreeNode",
@@ -2264,7 +2323,7 @@
     }
   },
   {
-    "__docId__": 164,
+    "__docId__": 165,
     "kind": "member",
     "name": "left",
     "memberof": "src/trees/tree-node.ts~TreeNode",
@@ -2278,6 +2337,154 @@
       "types": [
         "*"
       ]
+    }
+  },
+  {
+    "__docId__": 166,
+    "kind": "file",
+    "name": "src/trees/tree-operations.spec.ts",
+    "content": "import TreeNode from \"./tree-node\";\nimport { TreeOperations } from \"./tree-operations\";\n\nlet treeOps: TreeOperations<number>;\n\nbeforeEach( () => {\n    treeOps = new TreeOperations<number>();\n});\n\ntest(\"basic test for level order traversal\", () => {\n  const tree = new TreeNode<number>(1);\n  tree.left = new TreeNode<number>(3);\n  tree.right = new TreeNode<number>(2);\n  let outputData = \"\";\n  const storeLog = (inputs: any) => (outputData += inputs);\n  console.log = jest.fn(storeLog);\n  treeOps.levelOrder(tree);\n  expect(outputData).toBe(\"1 3 2 \");\n});\n\ntest(\"level order traversal for more elements\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n    tree.left.left = new TreeNode<number>(40);\n    tree.left.right = new TreeNode<number>(60);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrder(tree);\n    expect(outputData).toBe(\"10 20 30 40 60 \");\n});\n\ntest(\"basic test for level order traversal\", () => {\n    const tree = new TreeNode<number>(1);\n    tree.left = new TreeNode<number>(3);\n    tree.right = new TreeNode<number>(2);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrderByLine(tree);\n    expect(outputData).toBe(\"1 $ 3 2 $ \");\n});\n\ntest(\"level order traversal for more elements\", () => {\n      const tree = new TreeNode<number>(10);\n      tree.left = new TreeNode<number>(20);\n      tree.right = new TreeNode<number>(30);\n      tree.left.left = new TreeNode<number>(40);\n      tree.left.right = new TreeNode<number>(60);\n      let outputData = \"\";\n      const storeLog = (inputs: any) => (outputData += inputs);\n      console.log = jest.fn(storeLog);\n      treeOps.levelOrderByLine(tree);\n      expect(outputData).toBe(\"10 $ 20 30 $ 40 60 $ \");\n});\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/tree-operations.spec.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 167,
+    "kind": "file",
+    "name": "src/trees/tree-operations.ts",
+    "content": "import { Queue } from \"../queue/queue\";\nimport TreeNode from \"./tree-node\";\n/**\n * This is implementation of operations on a Tree\n */\nexport class TreeOperations<T> {\n\n    /**\n     * You are given a tree and you need to do the level order traversal on this tree.\n     * Level order traversal of a tree is breadth-first traversal for the tree.\n     * Testcase1: The tree is\n     *         1\n     *      /      \\\n     *    3       2\n     * So, the level order would be 1 3 2\n     * Testcase2: The tree is\n     *                           10\n     *                        /        \\\n     *                     20         30\n     *                  /       \\\n     *               40       60\n     * So, the level order would be 10 20 30 40 60\n     * @param node\n     */\n    public levelOrder(node: TreeNode<T>): void {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (!queue.isEmpty()) {\n            const tempNode: TreeNode<T> | undefined = queue.poll();\n            if (tempNode) {\n                const left = tempNode.left;\n                const right = tempNode.right;\n                console.log(tempNode.data + \" \");\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n            }\n        }\n    }\n    /**\n     * Given a Binary Tree, your task is to print its level order traversal such that each level is separated by $.\n     * For the below tree the output will be 1 $ 2 3 $ 4 5 6 7 $ 8 $.\n     *           1\n     *        /     \\\n     *      2        3\n     *    /    \\     /   \\\n     *   4     5   6    7\n     *     \\\n     *      8\n     * @param node\n     */\n    public levelOrderByLine(node: TreeNode<T>): void {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (true) {\n            let size = queue.size();\n            if (size === 0) {\n               break;\n            }\n            while (size > 0) {\n                const tempNode = queue.poll();\n                if (!tempNode) {\n                    continue;\n                }\n                console.log(tempNode.data + \" \");\n                const left = tempNode.left;\n                const right = tempNode.right;\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n                size--;\n            }\n            console.log(\"$ \");\n        }\n    }\n\n    /**\n     * Complete the function to print spiral order traversal of a tree.\n     * Testcase1: The tree is\n     *         1\n     *      /      \\\n     *    3       2\n     * So, the spiral level order would be 1 3 2\n     * Testcase2: The tree is\n     *                            10\n     *                         /        \\\n     *                      20         30\n     *                   /       \\\n     *                40       60\n     *                /         \\\n     *             50   55    70  80\n     * So, the spiral level order would be 10 20 30 60 40\n     */\n    public spiral(node: TreeNode<T>): void {\n\n    }\n\n    public height(node: TreeNode<T>): number {\n        return 0;\n    }\n}\n",
+    "static": true,
+    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/tree-operations.ts",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 168,
+    "kind": "class",
+    "name": "TreeOperations",
+    "memberof": "src/trees/tree-operations.ts",
+    "static": true,
+    "longname": "src/trees/tree-operations.ts~TreeOperations",
+    "access": "public",
+    "export": true,
+    "importPath": "dsa-gfg/src/trees/tree-operations.ts",
+    "importStyle": "{TreeOperations}",
+    "description": "This is implementation of operations on a Tree",
+    "lineNumber": 6,
+    "interface": false
+  },
+  {
+    "__docId__": 169,
+    "kind": "method",
+    "name": "levelOrder",
+    "memberof": "src/trees/tree-operations.ts~TreeOperations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/trees/tree-operations.ts~TreeOperations#levelOrder",
+    "access": "public",
+    "description": "You are given a tree and you need to do the level order traversal on this tree.\nLevel order traversal of a tree is breadth-first traversal for the tree.\nTestcase1: The tree is\n1\n/      \\\n3       2\nSo, the level order would be 1 3 2\nTestcase2: The tree is\n10\n/        \\\n20         30\n/       \\\n40       60\nSo, the level order would be 10 20 30 40 60",
+    "lineNumber": 25,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TreeNode"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 170,
+    "kind": "method",
+    "name": "levelOrderByLine",
+    "memberof": "src/trees/tree-operations.ts~TreeOperations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/trees/tree-operations.ts~TreeOperations#levelOrderByLine",
+    "access": "public",
+    "description": "Given a Binary Tree, your task is to print its level order traversal such that each level is separated by $.\nFor the below tree the output will be 1 $ 2 3 $ 4 5 6 7 $ 8 $.\n1\n/     \\\n2        3\n/    \\     /   \\\n4     5   6    7\n\\\n8",
+    "lineNumber": 55,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TreeNode"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 171,
+    "kind": "method",
+    "name": "spiral",
+    "memberof": "src/trees/tree-operations.ts~TreeOperations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/trees/tree-operations.ts~TreeOperations#spiral",
+    "access": "public",
+    "description": "Complete the function to print spiral order traversal of a tree.\nTestcase1: The tree is\n1\n/      \\\n3       2\nSo, the spiral level order would be 1 3 2\nTestcase2: The tree is\n10\n/        \\\n20         30\n/       \\\n40       60\n/         \\\n50   55    70  80\nSo, the spiral level order would be 10 20 30 60 40",
+    "lineNumber": 100,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TreeNode"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": ""
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 172,
+    "kind": "method",
+    "name": "height",
+    "memberof": "src/trees/tree-operations.ts~TreeOperations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/trees/tree-operations.ts~TreeOperations#height",
+    "access": "public",
+    "description": "",
+    "lineNumber": 104,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TreeNode"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": ""
     }
   },
   {
