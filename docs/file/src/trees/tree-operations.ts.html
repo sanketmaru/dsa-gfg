@@ -35,8 +35,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stack">stack</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/stack.ts~Stack.html">Stack</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/two-stacks.ts~Stacks.html">Stacks</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-spiral.ts~Spiral.html">Spiral</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-operations.ts~TreeOperations.html">TreeOperations</a></span></span></li>
 </ul>
 </div>
@@ -143,11 +142,66 @@ export class TreeOperations&lt;T&gt; {
      * So, the spiral level order would be 10 20 30 60 40
      */
     public spiral(node: TreeNode&lt;T&gt;): void {
-
+        if (node === null) {
+            return;
+        }
+        const height = this.height(node);
+        let ltr = false;
+        for (let i = 1; i &lt;= height; i++) {
+            this.printGivenLevel(node, i, ltr);
+            ltr = !ltr;
+        }
     }
 
-    public height(node: TreeNode&lt;T&gt;): number {
-        return 0;
+    /**
+     * Given a binary tree, find height of it.
+     *
+     *         1
+     *      /    \
+     *   10      39
+     *   /
+     *  5
+     * @param node
+     */
+    public height(node: TreeNode&lt;T&gt; | null): number {
+        if (node === null) {
+            return 0;
+        } else {
+            const lDepth = this.height(node.left);
+            const rDepth = this.height(node.right);
+            if (lDepth &gt; rDepth) {
+                return lDepth + 1;
+            } else {
+                return rDepth + 1;
+            }
+        }
+    }
+
+    private printGivenLevel(node: TreeNode&lt;T&gt;, level: number, ltr: boolean) {
+        if (node === null) {
+            return;
+        }
+        if (level === 1) {
+            console.log(node.data + &quot; &quot;);
+            return;
+        }
+        const left = node.left;
+        const right = node.right;
+        if (ltr) {
+            if (left) {
+                this.printGivenLevel(left, level - 1, ltr);
+            }
+            if (right) {
+                this.printGivenLevel(right, level - 1, ltr);
+            }
+        } else {
+            if (right) {
+                this.printGivenLevel(right, level - 1, ltr);
+            }
+            if (left) {
+                this.printGivenLevel(left, level - 1, ltr);
+            }
+        }
     }
 }
 </code></pre>

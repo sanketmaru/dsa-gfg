@@ -98,10 +98,65 @@ export class TreeOperations<T> {
      * So, the spiral level order would be 10 20 30 60 40
      */
     public spiral(node: TreeNode<T>): void {
-
+        if (node === null) {
+            return;
+        }
+        const height = this.height(node);
+        let ltr = false;
+        for (let i = 1; i <= height; i++) {
+            this.printGivenLevel(node, i, ltr);
+            ltr = !ltr;
+        }
     }
 
-    public height(node: TreeNode<T>): number {
-        return 0;
+    /**
+     * Given a binary tree, find height of it.
+     *
+     *         1
+     *      /    \
+     *   10      39
+     *   /
+     *  5
+     * @param node
+     */
+    public height(node: TreeNode<T> | null): number {
+        if (node === null) {
+            return 0;
+        } else {
+            const lDepth = this.height(node.left);
+            const rDepth = this.height(node.right);
+            if (lDepth > rDepth) {
+                return lDepth + 1;
+            } else {
+                return rDepth + 1;
+            }
+        }
+    }
+
+    private printGivenLevel(node: TreeNode<T>, level: number, ltr: boolean) {
+        if (node === null) {
+            return;
+        }
+        if (level === 1) {
+            console.log(node.data + " ");
+            return;
+        }
+        const left = node.left;
+        const right = node.right;
+        if (ltr) {
+            if (left) {
+                this.printGivenLevel(left, level - 1, ltr);
+            }
+            if (right) {
+                this.printGivenLevel(right, level - 1, ltr);
+            }
+        } else {
+            if (right) {
+                this.printGivenLevel(right, level - 1, ltr);
+            }
+            if (left) {
+                this.printGivenLevel(left, level - 1, ltr);
+            }
+        }
     }
 }

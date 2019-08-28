@@ -24,12 +24,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "dsa-gfg/src/trees/level-order-spiral.ts~spiral",
-    "class/src/trees/level-order-spiral.ts~Spiral.html",
-    "<span>Spiral</span> <span class=\"search-result-import-path\">dsa-gfg/src/trees/level-order-spiral.ts</span>",
-    "class"
-  ],
-  [
     "dsa-gfg/src/stack/stack.ts~stack",
     "class/src/stack/stack.ts~Stack.html",
     "<span>Stack</span> <span class=\"search-result-import-path\">dsa-gfg/src/stack/stack.ts</span>",
@@ -684,18 +678,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/trees/level-order-spiral.ts",
-    "file/src/trees/level-order-spiral.ts.html",
-    "src/trees/level-order-spiral.ts",
-    "file"
-  ],
-  [
-    "src/trees/level-order-spiral.ts~spiral#printspiral",
-    "class/src/trees/level-order-spiral.ts~Spiral.html#instance-method-printSpiral",
-    "src/trees/level-order-spiral.ts~Spiral#printSpiral",
-    "method"
-  ],
-  [
     "src/trees/tree-node.ts",
     "file/src/trees/tree-node.ts.html",
     "src/trees/tree-node.ts",
@@ -747,6 +729,12 @@ window.esdocSearchIndex = [
     "src/trees/tree-operations.ts~treeoperations#levelorderbyline",
     "class/src/trees/tree-operations.ts~TreeOperations.html#instance-method-levelOrderByLine",
     "src/trees/tree-operations.ts~TreeOperations#levelOrderByLine",
+    "method"
+  ],
+  [
+    "src/trees/tree-operations.ts~treeoperations#printgivenlevel",
+    "class/src/trees/tree-operations.ts~TreeOperations.html#instance-method-printGivenLevel",
+    "src/trees/tree-operations.ts~TreeOperations#printGivenLevel",
     "method"
   ],
   [

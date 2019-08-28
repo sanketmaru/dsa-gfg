@@ -2216,58 +2216,6 @@
   {
     "__docId__": 158,
     "kind": "file",
-    "name": "src/trees/level-order-spiral.ts",
-    "content": "\n\n\nimport { Queue } from \"../queue/queue\";\nimport TreeNode from \"./tree-node\";\nexport class Spiral<T> {\n    public printSpiral(node: TreeNode<T>) {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (!queue.isEmpty()) {\n            const tempNode = queue.poll();\n            if (!tempNode) {\n                continue;\n            }\n            const size = queue.size();\n            for (let i = 0; i < size; i++) {\n                console.log(tempNode.data + \" \");\n                const left = tempNode.left;\n                const right = tempNode.right;\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n            }\n        }\n    }\n}\n",
-    "static": true,
-    "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/level-order-spiral.ts",
-    "access": "public",
-    "description": null,
-    "lineNumber": 1
-  },
-  {
-    "__docId__": 159,
-    "kind": "class",
-    "name": "Spiral",
-    "memberof": "src/trees/level-order-spiral.ts",
-    "static": true,
-    "longname": "src/trees/level-order-spiral.ts~Spiral",
-    "access": "public",
-    "export": true,
-    "importPath": "dsa-gfg/src/trees/level-order-spiral.ts",
-    "importStyle": "{Spiral}",
-    "description": "",
-    "lineNumber": 6,
-    "interface": false
-  },
-  {
-    "__docId__": 160,
-    "kind": "method",
-    "name": "printSpiral",
-    "memberof": "src/trees/level-order-spiral.ts~Spiral",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/trees/level-order-spiral.ts~Spiral#printSpiral",
-    "access": "public",
-    "description": "",
-    "lineNumber": 7,
-    "params": [
-      {
-        "nullable": null,
-        "types": [
-          "TreeNode"
-        ],
-        "spread": false,
-        "optional": false,
-        "name": "node",
-        "description": ""
-      }
-    ],
-    "return": null
-  },
-  {
-    "__docId__": 161,
-    "kind": "file",
     "name": "src/trees/tree-node.ts",
     "content": "export default class TreeNode<T> {\n    public data: T;\n    public left: TreeNode<T> | null;\n    public right: TreeNode<T> | null;\n    constructor(item: T) {\n        this.data = item;\n        this.left = this.right = null;\n    }\n\n}\n",
     "static": true,
@@ -2277,7 +2225,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 162,
+    "__docId__": 159,
     "kind": "class",
     "name": "TreeNode",
     "memberof": "src/trees/tree-node.ts",
@@ -2292,7 +2240,7 @@
     "interface": false
   },
   {
-    "__docId__": 163,
+    "__docId__": 160,
     "kind": "constructor",
     "name": "constructor",
     "memberof": "src/trees/tree-node.ts~TreeNode",
@@ -2306,7 +2254,7 @@
     "undocument": true
   },
   {
-    "__docId__": 164,
+    "__docId__": 161,
     "kind": "member",
     "name": "data",
     "memberof": "src/trees/tree-node.ts~TreeNode",
@@ -2323,7 +2271,7 @@
     }
   },
   {
-    "__docId__": 165,
+    "__docId__": 162,
     "kind": "member",
     "name": "left",
     "memberof": "src/trees/tree-node.ts~TreeNode",
@@ -2340,10 +2288,10 @@
     }
   },
   {
-    "__docId__": 166,
+    "__docId__": 163,
     "kind": "file",
     "name": "src/trees/tree-operations.spec.ts",
-    "content": "import TreeNode from \"./tree-node\";\nimport { TreeOperations } from \"./tree-operations\";\n\nlet treeOps: TreeOperations<number>;\n\nbeforeEach( () => {\n    treeOps = new TreeOperations<number>();\n});\n\ntest(\"basic test for level order traversal\", () => {\n  const tree = new TreeNode<number>(1);\n  tree.left = new TreeNode<number>(3);\n  tree.right = new TreeNode<number>(2);\n  let outputData = \"\";\n  const storeLog = (inputs: any) => (outputData += inputs);\n  console.log = jest.fn(storeLog);\n  treeOps.levelOrder(tree);\n  expect(outputData).toBe(\"1 3 2 \");\n});\n\ntest(\"level order traversal for more elements\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n    tree.left.left = new TreeNode<number>(40);\n    tree.left.right = new TreeNode<number>(60);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrder(tree);\n    expect(outputData).toBe(\"10 20 30 40 60 \");\n});\n\ntest(\"basic test for level order traversal\", () => {\n    const tree = new TreeNode<number>(1);\n    tree.left = new TreeNode<number>(3);\n    tree.right = new TreeNode<number>(2);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrderByLine(tree);\n    expect(outputData).toBe(\"1 $ 3 2 $ \");\n});\n\ntest(\"level order traversal for more elements\", () => {\n      const tree = new TreeNode<number>(10);\n      tree.left = new TreeNode<number>(20);\n      tree.right = new TreeNode<number>(30);\n      tree.left.left = new TreeNode<number>(40);\n      tree.left.right = new TreeNode<number>(60);\n      let outputData = \"\";\n      const storeLog = (inputs: any) => (outputData += inputs);\n      console.log = jest.fn(storeLog);\n      treeOps.levelOrderByLine(tree);\n      expect(outputData).toBe(\"10 $ 20 30 $ 40 60 $ \");\n});\n",
+    "content": "import TreeNode from \"./tree-node\";\nimport { TreeOperations } from \"./tree-operations\";\n\nlet treeOps: TreeOperations<number>;\n\nbeforeEach( () => {\n    treeOps = new TreeOperations<number>();\n});\n\ntest(\"basic test for level order traversal\", () => {\n  const tree = new TreeNode<number>(1);\n  tree.left = new TreeNode<number>(3);\n  tree.right = new TreeNode<number>(2);\n  let outputData = \"\";\n  const storeLog = (inputs: any) => (outputData += inputs);\n  console.log = jest.fn(storeLog);\n  treeOps.levelOrder(tree);\n  expect(outputData).toBe(\"1 3 2 \");\n});\n\ntest(\"level order traversal for more elements\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n    tree.left.left = new TreeNode<number>(40);\n    tree.left.right = new TreeNode<number>(60);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrder(tree);\n    expect(outputData).toBe(\"10 20 30 40 60 \");\n});\n\ntest(\"basic test for level order traversal\", () => {\n    const tree = new TreeNode<number>(1);\n    tree.left = new TreeNode<number>(3);\n    tree.right = new TreeNode<number>(2);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrderByLine(tree);\n    expect(outputData).toBe(\"1 $ 3 2 $ \");\n});\n\ntest(\"level order traversal for more elements\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n    tree.left.left = new TreeNode<number>(40);\n    tree.left.right = new TreeNode<number>(60);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrderByLine(tree);\n    expect(outputData).toBe(\"10 $ 20 30 $ 40 60 $ \");\n});\n\ntest(\"height of binary tree should be 3\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n    tree.left.left = new TreeNode<number>(40);\n    tree.left.right = new TreeNode<number>(60);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.levelOrderByLine(tree);\n    expect(outputData).toBe(\"10 20 30 60 40 \");\n});\n\ntest(\"print spiral form of binary tree\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n\n    const leftNode = new TreeNode<number>(40);\n    leftNode.left = new TreeNode<number>(50);\n    leftNode.right = new TreeNode<number>(55);\n    tree.left.left = leftNode;\n\n    const rightNode = new TreeNode<number>(60);\n    rightNode.left = new TreeNode<number>(70);\n    rightNode.right = new TreeNode<number>(80);\n    tree.left.right = rightNode;\n\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.spiral(tree);\n    expect(outputData).toBe(\"10 20 30 60 40 50 55 70 80\");\n});\n\ntest(\"print spiral form of binary tree\", () => {\n    const tree = new TreeNode<number>(10);\n    tree.left = new TreeNode<number>(20);\n    tree.right = new TreeNode<number>(30);\n    tree.left.left = new TreeNode<number>(40);\n    tree.left.right = new TreeNode<number>(60);\n    let outputData = \"\";\n    const storeLog = (inputs: any) => (outputData += inputs);\n    console.log = jest.fn(storeLog);\n    treeOps.spiral(tree);\n    expect(outputData).toBe(\"10 20 30 60 40 \");\n});\n",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/tree-operations.spec.ts",
     "access": "public",
@@ -2351,10 +2299,10 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 167,
+    "__docId__": 164,
     "kind": "file",
     "name": "src/trees/tree-operations.ts",
-    "content": "import { Queue } from \"../queue/queue\";\nimport TreeNode from \"./tree-node\";\n/**\n * This is implementation of operations on a Tree\n */\nexport class TreeOperations<T> {\n\n    /**\n     * You are given a tree and you need to do the level order traversal on this tree.\n     * Level order traversal of a tree is breadth-first traversal for the tree.\n     * Testcase1: The tree is\n     *         1\n     *      /      \\\n     *    3       2\n     * So, the level order would be 1 3 2\n     * Testcase2: The tree is\n     *                           10\n     *                        /        \\\n     *                     20         30\n     *                  /       \\\n     *               40       60\n     * So, the level order would be 10 20 30 40 60\n     * @param node\n     */\n    public levelOrder(node: TreeNode<T>): void {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (!queue.isEmpty()) {\n            const tempNode: TreeNode<T> | undefined = queue.poll();\n            if (tempNode) {\n                const left = tempNode.left;\n                const right = tempNode.right;\n                console.log(tempNode.data + \" \");\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n            }\n        }\n    }\n    /**\n     * Given a Binary Tree, your task is to print its level order traversal such that each level is separated by $.\n     * For the below tree the output will be 1 $ 2 3 $ 4 5 6 7 $ 8 $.\n     *           1\n     *        /     \\\n     *      2        3\n     *    /    \\     /   \\\n     *   4     5   6    7\n     *     \\\n     *      8\n     * @param node\n     */\n    public levelOrderByLine(node: TreeNode<T>): void {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (true) {\n            let size = queue.size();\n            if (size === 0) {\n               break;\n            }\n            while (size > 0) {\n                const tempNode = queue.poll();\n                if (!tempNode) {\n                    continue;\n                }\n                console.log(tempNode.data + \" \");\n                const left = tempNode.left;\n                const right = tempNode.right;\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n                size--;\n            }\n            console.log(\"$ \");\n        }\n    }\n\n    /**\n     * Complete the function to print spiral order traversal of a tree.\n     * Testcase1: The tree is\n     *         1\n     *      /      \\\n     *    3       2\n     * So, the spiral level order would be 1 3 2\n     * Testcase2: The tree is\n     *                            10\n     *                         /        \\\n     *                      20         30\n     *                   /       \\\n     *                40       60\n     *                /         \\\n     *             50   55    70  80\n     * So, the spiral level order would be 10 20 30 60 40\n     */\n    public spiral(node: TreeNode<T>): void {\n\n    }\n\n    public height(node: TreeNode<T>): number {\n        return 0;\n    }\n}\n",
+    "content": "import { Queue } from \"../queue/queue\";\nimport TreeNode from \"./tree-node\";\n/**\n * This is implementation of operations on a Tree\n */\nexport class TreeOperations<T> {\n\n    /**\n     * You are given a tree and you need to do the level order traversal on this tree.\n     * Level order traversal of a tree is breadth-first traversal for the tree.\n     * Testcase1: The tree is\n     *         1\n     *      /      \\\n     *    3       2\n     * So, the level order would be 1 3 2\n     * Testcase2: The tree is\n     *                           10\n     *                        /        \\\n     *                     20         30\n     *                  /       \\\n     *               40       60\n     * So, the level order would be 10 20 30 40 60\n     * @param node\n     */\n    public levelOrder(node: TreeNode<T>): void {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (!queue.isEmpty()) {\n            const tempNode: TreeNode<T> | undefined = queue.poll();\n            if (tempNode) {\n                const left = tempNode.left;\n                const right = tempNode.right;\n                console.log(tempNode.data + \" \");\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n            }\n        }\n    }\n    /**\n     * Given a Binary Tree, your task is to print its level order traversal such that each level is separated by $.\n     * For the below tree the output will be 1 $ 2 3 $ 4 5 6 7 $ 8 $.\n     *           1\n     *        /     \\\n     *      2        3\n     *    /    \\     /   \\\n     *   4     5   6    7\n     *     \\\n     *      8\n     * @param node\n     */\n    public levelOrderByLine(node: TreeNode<T>): void {\n        const queue = new Queue<TreeNode<T>>();\n        queue.add(node);\n        while (true) {\n            let size = queue.size();\n            if (size === 0) {\n               break;\n            }\n            while (size > 0) {\n                const tempNode = queue.poll();\n                if (!tempNode) {\n                    continue;\n                }\n                console.log(tempNode.data + \" \");\n                const left = tempNode.left;\n                const right = tempNode.right;\n                if (left != null) {\n                    queue.add(left);\n                }\n                if (right != null) {\n                    queue.add(right);\n                }\n                size--;\n            }\n            console.log(\"$ \");\n        }\n    }\n\n    /**\n     * Complete the function to print spiral order traversal of a tree.\n     * Testcase1: The tree is\n     *         1\n     *      /      \\\n     *    3       2\n     * So, the spiral level order would be 1 3 2\n     * Testcase2: The tree is\n     *                            10\n     *                         /        \\\n     *                      20         30\n     *                   /       \\\n     *                40       60\n     *                /         \\\n     *             50   55    70  80\n     * So, the spiral level order would be 10 20 30 60 40\n     */\n    public spiral(node: TreeNode<T>): void {\n        if (node === null) {\n            return;\n        }\n        const height = this.height(node);\n        let ltr = false;\n        for (let i = 1; i <= height; i++) {\n            this.printGivenLevel(node, i, ltr);\n            ltr = !ltr;\n        }\n    }\n\n    /**\n     * Given a binary tree, find height of it.\n     *\n     *         1\n     *      /    \\\n     *   10      39\n     *   /\n     *  5\n     * @param node\n     */\n    public height(node: TreeNode<T> | null): number {\n        if (node === null) {\n            return 0;\n        } else {\n            const lDepth = this.height(node.left);\n            const rDepth = this.height(node.right);\n            if (lDepth > rDepth) {\n                return lDepth + 1;\n            } else {\n                return rDepth + 1;\n            }\n        }\n    }\n\n    private printGivenLevel(node: TreeNode<T>, level: number, ltr: boolean) {\n        if (node === null) {\n            return;\n        }\n        if (level === 1) {\n            console.log(node.data + \" \");\n            return;\n        }\n        const left = node.left;\n        const right = node.right;\n        if (ltr) {\n            if (left) {\n                this.printGivenLevel(left, level - 1, ltr);\n            }\n            if (right) {\n                this.printGivenLevel(right, level - 1, ltr);\n            }\n        } else {\n            if (right) {\n                this.printGivenLevel(right, level - 1, ltr);\n            }\n            if (left) {\n                this.printGivenLevel(left, level - 1, ltr);\n            }\n        }\n    }\n}\n",
     "static": true,
     "longname": "/Users/sanketmaru/projects/dsa-gfg/src/trees/tree-operations.ts",
     "access": "public",
@@ -2362,7 +2310,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 168,
+    "__docId__": 165,
     "kind": "class",
     "name": "TreeOperations",
     "memberof": "src/trees/tree-operations.ts",
@@ -2377,7 +2325,7 @@
     "interface": false
   },
   {
-    "__docId__": 169,
+    "__docId__": 166,
     "kind": "method",
     "name": "levelOrder",
     "memberof": "src/trees/tree-operations.ts~TreeOperations",
@@ -2403,7 +2351,7 @@
     "return": null
   },
   {
-    "__docId__": 170,
+    "__docId__": 167,
     "kind": "method",
     "name": "levelOrderByLine",
     "memberof": "src/trees/tree-operations.ts~TreeOperations",
@@ -2429,7 +2377,7 @@
     "return": null
   },
   {
-    "__docId__": 171,
+    "__docId__": 168,
     "kind": "method",
     "name": "spiral",
     "memberof": "src/trees/tree-operations.ts~TreeOperations",
@@ -2455,7 +2403,7 @@
     "return": null
   },
   {
-    "__docId__": 172,
+    "__docId__": 169,
     "kind": "method",
     "name": "height",
     "memberof": "src/trees/tree-operations.ts~TreeOperations",
@@ -2464,13 +2412,13 @@
     "static": false,
     "longname": "src/trees/tree-operations.ts~TreeOperations#height",
     "access": "public",
-    "description": "",
-    "lineNumber": 104,
+    "description": "Given a binary tree, find height of it.\n\n1\n/    \\\n10      39\n/\n5",
+    "lineNumber": 122,
     "params": [
       {
         "nullable": null,
         "types": [
-          "TreeNode"
+          "undefined"
         ],
         "spread": false,
         "optional": false,
@@ -2486,6 +2434,52 @@
       "spread": false,
       "description": ""
     }
+  },
+  {
+    "__docId__": 170,
+    "kind": "method",
+    "name": "printGivenLevel",
+    "memberof": "src/trees/tree-operations.ts~TreeOperations",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/trees/tree-operations.ts~TreeOperations#printGivenLevel",
+    "access": "public",
+    "description": "",
+    "lineNumber": 136,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "TreeNode"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "level",
+        "description": ""
+      },
+      {
+        "nullable": null,
+        "types": [
+          "boolean"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ltr",
+        "description": ""
+      }
+    ],
+    "return": null
   },
   {
     "kind": "index",

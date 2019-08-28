@@ -35,8 +35,7 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/queue/queue.ts~Queue.html">Queue</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#stack">stack</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/stack.ts~Stack.html">Stack</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/stack/two-stacks.ts~Stacks.html">Stacks</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/level-order-spiral.ts~Spiral.html">Spiral</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#trees">trees</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-node.ts~TreeNode.html">TreeNode</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/trees/tree-operations.ts~TreeOperations.html">TreeOperations</a></span></span></li>
 </ul>
 </div>
@@ -88,16 +87,64 @@ test(&quot;basic test for level order traversal&quot;, () =&gt; {
 });
 
 test(&quot;level order traversal for more elements&quot;, () =&gt; {
-      const tree = new TreeNode&lt;number&gt;(10);
-      tree.left = new TreeNode&lt;number&gt;(20);
-      tree.right = new TreeNode&lt;number&gt;(30);
-      tree.left.left = new TreeNode&lt;number&gt;(40);
-      tree.left.right = new TreeNode&lt;number&gt;(60);
-      let outputData = &quot;&quot;;
-      const storeLog = (inputs: any) =&gt; (outputData += inputs);
-      console.log = jest.fn(storeLog);
-      treeOps.levelOrderByLine(tree);
-      expect(outputData).toBe(&quot;10 $ 20 30 $ 40 60 $ &quot;);
+    const tree = new TreeNode&lt;number&gt;(10);
+    tree.left = new TreeNode&lt;number&gt;(20);
+    tree.right = new TreeNode&lt;number&gt;(30);
+    tree.left.left = new TreeNode&lt;number&gt;(40);
+    tree.left.right = new TreeNode&lt;number&gt;(60);
+    let outputData = &quot;&quot;;
+    const storeLog = (inputs: any) =&gt; (outputData += inputs);
+    console.log = jest.fn(storeLog);
+    treeOps.levelOrderByLine(tree);
+    expect(outputData).toBe(&quot;10 $ 20 30 $ 40 60 $ &quot;);
+});
+
+test(&quot;height of binary tree should be 3&quot;, () =&gt; {
+    const tree = new TreeNode&lt;number&gt;(10);
+    tree.left = new TreeNode&lt;number&gt;(20);
+    tree.right = new TreeNode&lt;number&gt;(30);
+    tree.left.left = new TreeNode&lt;number&gt;(40);
+    tree.left.right = new TreeNode&lt;number&gt;(60);
+    let outputData = &quot;&quot;;
+    const storeLog = (inputs: any) =&gt; (outputData += inputs);
+    console.log = jest.fn(storeLog);
+    treeOps.levelOrderByLine(tree);
+    expect(outputData).toBe(&quot;10 20 30 60 40 &quot;);
+});
+
+test(&quot;print spiral form of binary tree&quot;, () =&gt; {
+    const tree = new TreeNode&lt;number&gt;(10);
+    tree.left = new TreeNode&lt;number&gt;(20);
+    tree.right = new TreeNode&lt;number&gt;(30);
+
+    const leftNode = new TreeNode&lt;number&gt;(40);
+    leftNode.left = new TreeNode&lt;number&gt;(50);
+    leftNode.right = new TreeNode&lt;number&gt;(55);
+    tree.left.left = leftNode;
+
+    const rightNode = new TreeNode&lt;number&gt;(60);
+    rightNode.left = new TreeNode&lt;number&gt;(70);
+    rightNode.right = new TreeNode&lt;number&gt;(80);
+    tree.left.right = rightNode;
+
+    let outputData = &quot;&quot;;
+    const storeLog = (inputs: any) =&gt; (outputData += inputs);
+    console.log = jest.fn(storeLog);
+    treeOps.spiral(tree);
+    expect(outputData).toBe(&quot;10 20 30 60 40 50 55 70 80&quot;);
+});
+
+test(&quot;print spiral form of binary tree&quot;, () =&gt; {
+    const tree = new TreeNode&lt;number&gt;(10);
+    tree.left = new TreeNode&lt;number&gt;(20);
+    tree.right = new TreeNode&lt;number&gt;(30);
+    tree.left.left = new TreeNode&lt;number&gt;(40);
+    tree.left.right = new TreeNode&lt;number&gt;(60);
+    let outputData = &quot;&quot;;
+    const storeLog = (inputs: any) =&gt; (outputData += inputs);
+    console.log = jest.fn(storeLog);
+    treeOps.spiral(tree);
+    expect(outputData).toBe(&quot;10 20 30 60 40 &quot;);
 });
 </code></pre>
 
