@@ -1,0 +1,96 @@
+// Initial Template for Java
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+class Graph {
+    int size;
+    Graph(int V) { this.size = V; }
+    Graph() {}
+    static void addEdge(ArrayList<ArrayList<Integer>> list, int u, int v) {
+        list.get(u).add(v);
+        // list.get(v).add(u);
+    }
+} class DriverClass {
+    public static void main(String[] args) throws IOException {
+        // Scanner sc = new Scanner(System.in);
+        // int t = sc.nextInt();
+
+        BufferedReader read =
+            new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(read.readLine());
+
+        while (t-- > 0) {
+            ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+            String str[] = read.readLine().trim().split(" ");
+            int nov = Integer.parseInt(str[0]);
+            int edg = Integer.parseInt(str[1]);
+
+            // int nov = sc.nextInt();
+            // int edg = sc.nextInt();
+
+            new Graph(nov);
+            for (int i = 0; i < nov + 1; i++)
+                list.add(i, new ArrayList<Integer>());
+
+            str = read.readLine().trim().split(" ");
+            int k = 0;
+            for (int i = 1; i <= edg; i++) {
+                int u = Integer.parseInt(str[k++]);
+                int v = Integer.parseInt(str[k++]);
+                new Graph().addEdge(list, u, v);
+            }
+            str = read.readLine().trim().split(" ");
+            int s = Integer.parseInt(str[0]);
+            int d = Integer.parseInt(str[1]);
+            System.out.println(new Path().countPaths(list, s, d));
+        }
+    }
+}
+// } Driver Code Ends
+
+
+// User function Template for Java
+
+/*
+g : Adjacency list of the graph
+s : source node
+d : destination node
+*/
+
+class Path {
+
+    static int countPathsUtil(ArrayList<ArrayList<Integer>> list, int u, int d,
+                              boolean visited[], int pathCount) {
+        visited[u] = true; // Mark the visited for current node as true
+        if (u == d) // If current node is equal to destination node increase the
+                    // path count
+            pathCount++;
+        else {
+            Iterator<Integer> it = list.get(u).iterator();
+            while (
+                it.hasNext()) // Run for the adjacent nodes of the current node
+            {
+                int n = it.next();
+                if (!visited[n]) // If current node is not visited
+                {
+                    pathCount = countPathsUtil(
+                        list, n, d, visited,
+                        pathCount); // Call the function for adjacent node
+                }
+            }
+        }
+        visited[u] = false; // Mark visited false for the current node
+        return pathCount;
+    }
+
+    static int countPaths(ArrayList<ArrayList<Integer>> list, int s, int d) {
+        boolean visited[] = new boolean[1001];
+        Arrays.fill(visited, false);
+        int pathCount = 0;
+        pathCount = countPathsUtil(
+            list, s, d, visited,
+            pathCount); // Call the function to get the total path count
+        return pathCount;
+    }
+}
